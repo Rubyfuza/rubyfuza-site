@@ -1,0 +1,37 @@
+%section#blog
+  .wrapper
+    %h1.heading
+      %a{:name=>"blog"}
+      %span Blog
+    %ul
+      %li.half
+        %article
+          %header
+            %h2= link_to "Spreading the Rails Love", "http://blog.rubyfuza.org/2013/01/spreading-rails-love.html"
+            %time
+              %span.day 20
+              %span.month Jan
+              %span.year 2013
+            %small by Marc Heiligers
+          %p My wife asked me "What are you most excited about at this year's conference?" That's a really tough question for me to answer, but I think the thing that I'm most excited about are the RailsBridge workshops...
+      %li.half
+        %article
+          %header
+            %h2= link_to "Three Months to Rubyfuza 2013", "http://blog.rubyfuza.org/2013/02/three-months-to-rubyfuza-2013.html"
+            %time
+              %span.day 07
+              %span.month Nov
+              %span.year 2012
+            %small by Marc Heiligers
+          %p Our keynote speakers are Konstantin Haase and Renée De Voursney. They will be leading the discussion on the Future of Ruby, both from the technical side of what we can expect in Ruby 2, Rails 4, Rubinius and so on, but also in the people side, on how we can introduce new people to Ruby, how to teach them and train them...
+      / %li.half
+      /   %article
+      /     %header
+      /       %time
+      /         %span.day 25
+      /         %span.month Oct
+      /         %span.year 2012
+      /       %h2= link_to "Submit your talks for Rubyfuza 2013", "http://rubyfuza.posterous.com/submit-your-talks-for-rubyfuza-2013"
+      /       %small by Marc Heiligers
+      /     %p Talks are again 20 min followed by 5 min of Q and A. Topics of interest range from Ruby (obviously), Rubygems, Rails and anything Ruby-related to interesting programming techniques, scaling strategies and even JavaScript/CoffeeScript. This year we will not be accepting talks on the Large Hadron Collider or dolphins...
+    = link_to "View all posts", "http://blog.rubyfuza.org/"

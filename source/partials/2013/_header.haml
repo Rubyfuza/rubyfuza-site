@@ -1,0 +1,53 @@
+
+%header#header
+  %nav#main
+
+    .wrapper
+      %ul
+        %li.js_nav_link= link_to "About", "#about"
+        %li.js_nav_link= link_to "Speakers", "#speakers"
+        %li.js_nav_link= link_to "Schedule", "#schedule"
+        %li.js_nav_link= link_to "Venue", "#venue"
+        %li.js_nav_link= link_to "Sponsors", "#sponsors"
+        %li.js_nav_link= link_to "Blog", "#blog"
+        %li#register= link_to "Register", "http://www.quicket.co.za/events/1209-rubyfuza-2013/"
+
+      = link_to 'index.html', :class => 'register-now' do
+        %span Back to 2016 
+        
+
+  .wrapper
+    %a{:name=>"about"}
+    %h1
+      %a{:href=>"/", :alt=>"RubyFuza Home"}
+        = image_tag "logo.png"
+
+    %h2
+      7-9 February 2013
+      %span Cape Town, South Africa
+
+    %h3
+      Africa's premier Ruby conference
+      %span Great talks, great people and great parties!
+    %a{:href=>"http://www.youtube.com/rubyfuza", :class=>"action"} View the videos!
+
+    .conf
+      = image_tag "collage3.png"
+
+    %ul.features
+      %li.third
+        %p
+          = image_tag "icon1.png", :class => 'left'
+          %span 2 days, 20 speakers, single track
+      %li.third
+        %p
+          = image_tag "icon2.png", :class => 'left'
+          %span Evening functions / networking time
+      %li.third
+        %p
+          = image_tag "icon3.png", :class => 'left'
+          %span Workshop day after the conference
+      %li.full
+        %p
+          Early bird R900, Full price R1200
+          %span * includes both days, snacks & workshop (seating limited)

@@ -1,0 +1,53 @@
+%header#header
+  %nav#main
+
+    .wrapper
+      %ul
+        %li.js_nav_link= link_to "About", "#about"
+        %li.js_nav_link= link_to "Speakers", "#speakers"
+        %li.js_nav_link= link_to "Schedule", "#schedule"
+        %li.js_nav_link= link_to "Venue", "#venue"
+        %li.js_nav_link= link_to "Sponsors", "#sponsors"
+        %li.js_nav_link= link_to "Blog", "#blog"
+        %li#register= link_to "Register", "http://www.quicket.co.za/events/2752-rubyfuza-2014/"
+
+      = link_to 'index.html', :class => 'register-now' do
+        %span Back to 2016 
+
+  .wrapper
+    %a{:name=>"about"}
+    %h1
+      %a{:href=>"/", :alt=>"Rubyfuza Home"}
+        = image_tag "logo-gem.png", :class => 'logo'
+        = "ruby<span>fu</span>za <span>2015</span>"
+
+    %h2
+      5-6 February 2015
+      %span Cape Town, South Africa
+
+    %h3
+      Africa's premier Ruby conference
+      %span Great talks, great people and great parties!
+    %a{:href=>"https://www.quicket.co.za/events/6934-rubyfuza-2015", :class=>"action"} Book Your Ticket Now!
+    //%a{:href=>"#", :class=>"action2 right"} Book Your Ticket Now!
+
+    .conf
+      = image_tag "/collage2015.png"
+
+    %ul.features
+      %li.third
+        %p
+          = image_tag "icon1.png", :class => 'left'
+          %span 2 days, 20 speakers, single track
+      %li.third
+        %p
+          = image_tag "icon2.png", :class => 'left'
+          %span Evening functions / networking time
+      %li.third
+        %p
+          = image_tag "icon3.png", :class => 'left'
+          %span Workshops around the conference
+      %li.full
+        %p
+          Early bird R900, Full price R1200
+          %span * includes both days, snacks & workshop (seating limited)

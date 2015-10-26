@@ -1,0 +1,44 @@
+
+//
+// Custom colors
+$one			: #98c9ee
+$two			: #c93131
+$three		: #1e3146
+$black		: #444
+$light		: #eee
+$lighter	: #f9f9f9
+
+
+//
+// Basic styles
+body
+	background: url("../images/bg.png")
+	color: #fff
+	font: normal 12px/1.6 'Open Sans', Arial, sans-serif
+
+.horizontal
+	+pie-clearfix
+
+	li
+		display: inline
+		float: left
+
+h1, h2, h3, h4, h5, h6
+	font-family: "Patua One", Arial, sans-serif
+	line-height: 1.6
+	+text-shadow(rgba(0, 0, 0, 0.2) 0 -2px 0)
+
+h2
+	font-size: 1.7em
+
+a
+	color: $one
+	&:hover, &:focus
+		color: #fff
+
+ul.list
+	list-style-type: circle
+	margin-bottom: 12px
+
+	li
+		margin-left: 24px
