@@ -74,3 +74,45 @@ mymiddlemansite/
 
 +-- public_html             <-- middleman bulid will create this folder with compiled CSS/JS/HTML that will then be served to the public
 ```
+
+## Building the site 
+
+Heroku will automatically attempt to execute a rake task called `assets:precompile`.
+
+This was originally for the benefit of Rails, but we can take advantage of this now for our own needs.
+
+I created a new Rakefile and added the following.
+
+```
+namespace :assets do
+  task :precompile do
+    sh 'middleman build'
+  end
+end
+```
+
+The task simply shells out to call `middleman build` which builds the site automatically when the site is pushed to Heroku. Middleman will output all files to the configured directory `./public_html`.
+
+## Serving the site
+
+The process of serving a static Middleman site on Heroku is quite straight forward once you understand the basics. The site will be running as a Rack app, so we’ll need a `config.ru` file. Here is what it looks like.
+
+```
+require 'rack'
+require 'rack/contrib/try_static'
+
+# Serve files from the build directory
+use Rack::TryStatic,
+  root: 'public_html',
+  urls: %w[/],
+  try: ['.html', 'index.html', '/index.html']
+
+run lambda{ |env|
+  four_oh_four_page = File.expand_path("../public_html/404/index.html", __FILE__)
+  [ 404, { 'Content-Type'  => 'text/html'}, [ File.read(four_oh_four_page) ]]
+}
+```
+
+The `Rack::TryStatic` section is how we serve up the static files that Middleman builds when the site is pushed to Heroku. Middleman has been configured to output all files into `./public_html`.
+
+If no page is served from the `Rack::Trystatic` app, the 404 page is served using the next `run` section.
