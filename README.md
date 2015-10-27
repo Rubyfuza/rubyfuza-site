@@ -1,4 +1,4 @@
-![Alt text](https://github.com/Ruberto/rubyfuza2/blob/master/source/images/logo-gem.png?raw=true)
+![Alt text](https://github.com/Ruberto/rubyfuza2/blob/master/source/images/rubyfuza_middleman.png?raw=true)
 
 ## Installation
 
