@@ -20,16 +20,17 @@ middleman server
 
 The preview server allows you to build your site, by modifying the contents of the `source` directory, and see your changes reflected in the browser at: `http://localhost:4567/`
 
-Autoreload is enabled so you wont need to reload your browser, or reset the serever for content / style changes, only if you have installed a new gem.
+Live-reload is enabled so you won't need to reload your browser or reset the serever for content / style changes. You will however if you have installed a new gem.
 
 To get started, simply develop as you normally would by building HTML, CSS, and Javascript in the `source` directory.
 
-Finally, you will want to build your project into a stand-alone site. From the project directory:
+Finally, you will want to build your project into a static site. From the project directory:
 
 ```
 middleman build
 ```
 
+Middleman has been configured to complie the site into the `public_html` folder, this folder will then be served through a Heroku / Rackapp / Puma setup.
 
 ## Directory Structure 
 
