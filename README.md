@@ -1,4 +1,4 @@
-# rubyfuza2
+![Alt text](https://github.com/Ruberto/rubyfuza2/blob/master/source/images/logo-gem.png?raw=true)
 
 ## Installation
 
@@ -20,7 +20,7 @@ middleman server
 
 The preview server allows you to build your site, by modifying the contents of the `source` directory, and see your changes reflected in the browser at: `http://localhost:4567/`
 
-Autoreload is enabled so you wont need to refresh your site, or the serever for content / style changes, only if you have installed a new gem.
+Autoreload is enabled so you wont need to reload your browser, or reset the serever for content / style changes, only if you have installed a new gem.
 
 To get started, simply develop as you normally would by building HTML, CSS, and Javascript in the `source` directory.
 
