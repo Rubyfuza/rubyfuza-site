@@ -126,3 +126,24 @@ run lambda{ |env|
 The `Rack::TryStatic` section is how we serve up the static files that Middleman builds when the site is pushed to Heroku. Middleman has been configured to output all files into `./public_html`.
 
 If no page is served from the `Rack::Trystatic` app, the 404 page is served using the next `run` section.
+
+
+## Contributing
+
+The site is usually maintained by the Ruby community, pull requests welcome
+
+## Credits
+
+Updated with love by Legendary Rob
+
+## License
+
+Copyright (c) 2015 Rubyfuza
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
