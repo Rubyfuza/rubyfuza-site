@@ -2,19 +2,28 @@
 
 ## Installation
 
-[Middleman](https://middlemanapp.com/) is built on Ruby and uses the [RubyGems package manager] (https://rubygems.org/pages/download) for installation. These are usually pre-installed on Mac OS X and Linux. Windows users can install both using [RubyInstaller].
+[Middleman](https://middlemanapp.com/) is built on Ruby and uses the [RubyGems package manager] (https://rubygems.org/pages/download) for installation. These are usually pre-installed on Mac OS X and Linux. Windows users can install both using [RubyInstaller](http://rubyinstaller.org/).
 
 ```
 gem install middleman
 ```
 
+Pull down the repo and then install all the nessessary gems with [bundler](http://bundler.io/)
+
+```
+git clone git@github.com:Ruberto/rubyfuza2.git
+
+cd /rubyfuza2
+
+bundle 
+```
 
 ## Middleman Server and Build
 
 Change directories into your new project and start the preview server:
 
 ```
-cd /rubyfuza
+cd /rubyfuza2
 middleman server
 ```
 
