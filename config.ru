@@ -1,17 +1,13 @@
-use Rack::Static,
-  :urls => ['/stylesheets', '/images', '/js', '/downloads'],
-  :root => 'site'
+require 'rack'
+require 'rack/contrib/try_static'
 
-run lambda { |env|
-  file = "site/#{env['PATH_INFO']}.html"
-  file = 'site/index.html' unless File.exists? file
+# Serve files from the public_html directory
+use Rack::TryStatic,
+  root: 'public_html',
+  urls: %w[/],
+  try: ['.html', 'index.html', '/index.html']
 
-  [
-    200,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
-    },
-    File.open(file, File::RDONLY)
-  ]
+run lambda{ |env|
+  four_oh_four_page = File.expand_path("../public_html/404/index.html", __FILE__)
+  [ 404, { 'Content-Type'  => 'text/html'}, [ File.read(four_oh_four_page) ]]
 }

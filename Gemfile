@@ -1,11 +1,20 @@
-if RUBY_VERSION =~ /1.9/
-  Encoding.default_external = Encoding::UTF_8
-  Encoding.default_internal = Encoding::UTF_8
-end
-
+# If you do not have OpenSSL installed, update
+# the following line to use "http://" instead
 source 'https://rubygems.org'
-ruby '2.0.0'
 
-gem 'rack'
-gem 'staticmatic'
-gem 'compass', '=0.11.7'
+gem "middleman", "~>3.4.0"
+
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
+
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+
+gem "therubyracer"
+
+gem "rack-contrib"
+
+gem "puma"
