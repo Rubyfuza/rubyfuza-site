@@ -12,7 +12,7 @@
           %a{:href=>"https://github.com/sarahmei/", :class=>"github"}= image_tag "github.png"
         %h2
           %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Sarah Mei
-        / %p Your talk's description
+        %p Factory, Workshop, Stage
 
         #speaker1.detail
           .links.right
@@ -23,55 +23,55 @@
             %h2 Sarah Mei
           .inner
             %p Sarah Mei has been doing software since before the internet had cats. She’s currently the Chief Consultant of DevMynd, where she helps teams refactor their way out of interesting messes. She also teaches object-oriented design with Sandi Metz, is a director of Ruby Central, and co-founded RailsBridge back in the day. Sarah lives in San Francisco, which is way colder than the California you imagine.
-            / %h3 Sarah's talk name
-            / %p Sarah's talk description.
+            %h3 Factory, Workshop, Stage
+            %p Once upon a time, writing software felt a lot like working in a factory. A product went through an assembly-line-like series of stages where each team added their contribution. At the end of the line, the finished product was packaged up and physically shipped to a customer.
+            %p Fast forward sixty years. Both the software itself and our process for making it are radically different from this original conception. But in the absence of a newer, more appropriate model for software development, we've unconsciously retained many industrial-era concepts -- and they're holding us back. We need a new model for software development that captures what we do today, and prepares us to build what we need for tomorrow.
+            %p I will outline a new model for software development that places the people who do it in the center of the picture, instead of on the periphery. Applying it to our projects gives us real, immediate answers to the hardest questions of software today.
 
-      / %li.speaker
-      /   / TODO# need to get a new profile picture and twitter and github handles
-      /   .rounded
-      /     %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox', id: 'julian_cheal'}
-      /       = image_tag "speakers/2016/speaker_name.jpg"
-      /     %a{:href=>"https://twitter.com/speaker-twitter", :class=>"twitter"}= image_tag "twitter.png"
-      /     %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
-      /   %h2
-      /     %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Julian Cheal
-      /   %p (M)Ruby, Robots, and how to control the World.
+      %li.speaker
+        .rounded
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox', id: 'julian_cheal'}
+            = image_tag "speakers/2016/speaker_name.jpg"
+          %a{:href=>"https://twitter.com/juliancheal", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/juliancheal", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Julian Cheal
+        %p (M)Ruby, Robots, and how to control the World.
 
-      /   #speaker2.detail
-      /     .links.right
-      /       %a{:href=>"https://twitter.com/speaker-twitter", :class=>"twitter"}= image_tag "twitter.png"
-      /       %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
-      /     .name
-      /       = image_tag "speakers/2016/speaker_name.jpg"
-      /       %h2 Julian Cheal
-      /     .inner
-      /       %p A British Ruby/Rails developer, with a penchant for tweed, fine coffee, and homebrewing. When not deploying enterprise clouds, I help organise fun events around the world that teach people to program flying robots. I also occasionally speak at international conferences on the intersection of programming and robotics.
-      /       %h3 (M)Ruby, Robots, and how to control the World.
-      /       %p Ever wanted to control your own robots, using just code and your imagination? Did you know you can make a robot fly with only 9 lines of Ruby?
-      /       %p With a little bit of Ruby and a variety of hardware; we'll see flying robots, mruby bots, and a lot more. We may even be able to make them... dance! So let's get coding: @robot.do_awesome_stuff!
+        #speaker2.detail
+          .links.right
+            %a{:href=>"https://twitter.com/juliancheal", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/juliancheal", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2016/speaker_name.jpg"
+            %h2 Julian Cheal
+          .inner
+            %p A British Ruby/Rails developer, with a penchant for tweed, fine coffee, and homebrewing. When not deploying enterprise clouds, I help organise fun events around the world that teach people to program flying robots. I also occasionally speak at international conferences on the intersection of programming and robotics.
+            %h3 (M)Ruby, Robots, and how to control the World.
+            %p Ever wanted to control your own robots, using just code and your imagination? Did you know you can make a robot fly with only 9 lines of Ruby?
+            %p With a little bit of Ruby and a variety of hardware; we'll see flying robots, mruby bots, and a lot more. We may even be able to make them... dance! So let's get coding: @robot.do_awesome_stuff!
 
-      / %li.speaker
-      /   / TODO# need to get a new profile picture and twitter and github handles
-      /   .rounded
-      /     %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'daphne_calitz'}
-      /       = image_tag "speakers/2016/speaker_name.jpg"
-      /     %a{:href=>"https://twitter.com/speaker-twitter", :class=>"twitter"}= image_tag "twitter.png"
-      /     %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
-      /   %h2
-      /     %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Daphné Calitz
-      /   %p Using LocalStorage for Progressive Saving
+      %li.speaker
+        .rounded
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'daphne_calitz'}
+            = image_tag "speakers/2016/daphne_calitz.jpg"
+          %a{:href=>"https://twitter.com/DaphneCalitz", :class=>"twitter"}= image_tag "twitter.png"
+          / %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Daphné Calitz
+        %p Using LocalStorage for Progressive Saving
 
-      /   #speaker3.detail
-      /     .links.right
-      /       %a{:href=>"https://twitter.com/speaker-twitter", :class=>"twitter"}= image_tag "twitter.png"
-      /       %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
-      /     .name
-      /       = image_tag "speakers/2016/speaker_name.jpg"
-      /       %h2 Daphné Calitz
-      /     .inner
-      /       %p Daphné Calitz is a Developer based in Hyde Park Johannesburg. Worklife includes writing salesforce applications in Apex and JavaScript and, writing and maintaining new integration components. She enjoys playing around with EmberJs in her spare time. She is a determined individual and a fan of pair programming (even though it can sometimes lead to homicidal thoughts).
-      /       %h3 Using LocalStorage for Progressive Saving
-      /       %p As application developers we often provide users with ways to capture complex data via a UI. What we often don't cater for is when that user is halfway through capturing a record and need to stop what they are doing. This talk will cover how we as developers can leverage LocalStorage in the browser to make our users' lives easier.
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/DaphneCalitz", :class=>"twitter"}= image_tag "twitter.png"
+            / %a{:href=>"https://github.com/speaker-github", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2016/daphne_calitz.jpg"
+            %h2 Daphné Calitz
+          .inner
+            %p Daphné Calitz is a Developer based in Hyde Park Johannesburg. Worklife includes writing salesforce applications in Apex and JavaScript and, writing and maintaining new integration components. She enjoys playing around with EmberJs in her spare time. She is a determined individual and a fan of pair programming (even though it can sometimes lead to homicidal thoughts).
+            %h3 Using LocalStorage for Progressive Saving
+            %p As application developers we often provide users with ways to capture complex data via a UI. What we often don't cater for is when that user is halfway through capturing a record and need to stop what they are doing. This talk will cover how we as developers can leverage LocalStorage in the browser to make our users' lives easier.
 
       %li.speaker
         .rounded
@@ -349,26 +349,117 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
-            = image_tag "speakers/you.png"
-          %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-          %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+          %a{href: '#speaker16', rel: 'speaker_image', class: 'fancybox', id: 'simon_stewart'}
+            = image_tag "images/speakers/2013/simonstewart.jpg"
+          %a{:href=>"https://twitter.com/SimonStewart", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/simonstewart", :class=>"github"}= image_tag "github.png"
         %h2
-          %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
-        %p Your talk's description
+          %a{href: '#speaker16', rel: 'speakers', class: 'fancybox'} Simon Stewart
+        %p Freelancing rates ... without using a random number generator
 
-        #speaker100.detail
+        #speaker16.detail
           .links.right
-            %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-            %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+            %a{:href=>"https://twitter.com/SimonStewart", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/simonstewart", :class=>"github"}= image_tag "github.png"
           .name
-            = image_tag "speakers/you.png"
-            %h2 Your name right here.
+            = image_tag "images/speakers/2013/simonstewart.jpg"
+            %h2 Simon Stewart
           .inner
-            %a{:href=>"http://cfp.rubyfuza.org/events/rubyfuza-2016-cfp", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
-            %br
-            %br
-            %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2016 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2016.
+            %p JSinSA conference founder and start up chap who's in a convincing disguise as a consultant. He also runs the FindFreeWiFi.co.za site.
+            %h3 Freelancing rates ... without using a random number generator
+            %p It's the thing everyone talks about, but no one tends to give full disclosure. This talk covers one of the approaches to figuring out an hourly rate for your time and pitching it to clients.
+            %p It will also cover:
+            %p * the zero value of asking peers for their rates
+            %p * when and how to substantiate a rate
+            %p * how to present the final number
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker17', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2016/eliza_de_jager.png"
+          %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker17', rel: 'speakers', class: 'fancybox'} Eliza de Jager
+        %p Eigenclasses and other Meta-programming Concepts
+
+        #speaker17.detail
+          .links.right
+            %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2016/eliza_de_jager.png"
+            %h2 Eliza de Jager
+          .inner
+            %p I started my career as a Clarion developer, and then moved into the asset management realm where I was exposed to various technologies. Then, four years ago I was introduced to Ruby and I never looked back!
+            %h3 Eigenclasses and other Meta-programming Concepts
+            %p Eigenclasses are an important construct in Ruby and, although obscured from the everyday developer, are core to many meta-programming principles and techniques. We delve into what an eigenclass is, how to access it, and how to make use of this knowledge in order to improve our meta-programming techniques. Method lookup, singleton methods, class_eval and instance_eval, and include and extend will all be explained in the context of eigenclasses. Other useful meta-programming ideas such as scope gates will also be investigated.              
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker18', rel: 'speaker_image', class: 'fancybox', id: 'brendon_mclean'}
+            = image_tag "images/speakers/2015/brendon_mclean.jpg"
+          %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/brendon9x", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker18', rel: 'speakers', class: 'fancybox'} Brendon McLean
+        %p Literate Programming in Ruby
+
+        #speaker18.detail
+          .links.right
+            %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/brendon9x", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2015/brendon_mclean.jpg"
+            %h2 Brendon McLean
+          .inner
+            %p Brendon McLean studied engineering because his career guidance councillor told him there were no jobs in software. He's been writing software ever since. He narrowly escaped a verbose career in enterprise Java when he was offered the role of heading up development at Intellection, a start-up in market research analytics. He jumped at the opportunity and helped build their data analytics platform for market research in Ruby.
+            %h3 Literate Programming in Ruby
+            %p Find out the about the history of literate programming and how it has evolved since Donald Knuth coined the term and implemented it in 1981. You will see several running examples of it in other languages leading up to running implementations in Ruby. Finally, the talk explores what's possible in Rails when you combine markup and code using a Jupyter Kernel for Rails.
+
+      / %li.speaker
+      /   .rounded
+      /     %a{href: '#speaker19', rel: 'speaker_image', class: 'fancybox', id: 'lydia_abel'}
+      /       = image_tag "images/speakers/2015/lydia_abel.jpg"
+      /     %a{:href=>"https://twitter.com/Lydiaabel2", :class=>"twitter"}= image_tag "twitter.png"
+      /     %a{:href=>"https://github.com/Lydiaabel2", :class=>"github"}= image_tag "github.png"
+      /   %h2
+      /     %a{href: '#speaker19', rel: 'speakers', class: 'fancybox'} Lydia Abel
+      /   %p talk name
+
+      /   #speaker19.detail
+      /     .links.right
+      /       %a{:href=>"https://twitter.com/Lydiaabel2", :class=>"twitter"}= image_tag "twitter.png"
+      /       %a{:href=>"https://github.com/Lydiaabel2", :class=>"github"}= image_tag "github.png"
+      /     .name
+      /       = image_tag "images/speakers/2015/lydia_abel.jpg"
+      /       %h2 Lydia Abel
+      /     .inner
+      /       %p person description
+      /       %h3 talk name
+      /       %p talk description
+
+      / %li.speaker
+      /   .rounded
+      /     %a{href: '#speaker20', rel: 'speaker_image', class: 'fancybox', id: 'brendon_mclean'}
+      /       = image_tag "images/speakers/2015/brendon_mclean.jpg"
+      /     %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= image_tag "twitter.png"
+      /     %a{:href=>"https://github.com/brendon9x", :class=>"github"}= image_tag "github.png"
+      /   %h2
+      /     %a{href: '#speaker20', rel: 'speakers', class: 'fancybox'} Austin Fagan
+      /   %p Assumption is the mother of all fuck-ups
+
+      /   #speaker20.detail
+      /     .links.right
+      /       %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= image_tag "twitter.png"
+      /       %a{:href=>"https://github.com/brendon9x", :class=>"github"}= image_tag "github.png"
+      /     .name
+      /       = image_tag "images/speakers/2015/brendon_mclean.jpg"
+      /       %h2 Austin Fagan
+      /     .inner
+      /       %p Austin Fagan has been billed as a Support Analyst, Developer, Scrum Master and Agile Coach. In all of these roles he has occasionally excelled at getting it very, very wrong. He’s currently busy learning new ways of challenging the assumptions that lead him into many a fine mess.
+      /       %h3 Assumption is the mother of all fuck-ups
+      /       %p As product developers we tend to get caught up in the solution and lose sight of the problem we are trying to solve. It's through the assumptions we make along the way that we come a cropper. This talk is about taking those assumptions and turning them into something really, really useful.
 
 
 
