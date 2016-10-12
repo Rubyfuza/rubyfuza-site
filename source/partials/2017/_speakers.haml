@@ -1,4 +1,10 @@
- %li.speaker
+%section#speakers
+  .wrapper
+    %h1.heading
+      %a{:name=>"speakers"}
+      %span Speakers
+    %ul
+      %li.speaker
         .rounded
           %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
             = image_tag "speakers/you.png"
@@ -20,3 +26,8 @@
             %br
             %br
             %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2016 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2016.
+
+
+
+    %div.clearfix
+    = partial('/global/signup')
