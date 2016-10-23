@@ -10,3 +10,5 @@ gem "middleman-livereload", "~> 3.1.0"
 gem "therubyracer"
 
 gem "rack-contrib"
+
+gem 'middleman-imageoptim'
