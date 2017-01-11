@@ -94,7 +94,7 @@ The task simply shells out to call `middleman build` which builds the site autom
 
 ## Serving the site
 
-The site is currently being served by gitlab pages.
+The site is currently being served by gitlab pages. #NOTE: When the build is successful it can take between 2 - 10 minutes for the changes to reflect on the site.
 
 ## Contributing
 
