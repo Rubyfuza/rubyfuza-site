@@ -11,9 +11,9 @@ gem install middleman
 Pull down the repo and then install all the nessessary gems with [bundler](http://bundler.io/)
 
 ```
-git clone git@github.com:Ruberto/rubyfuza2.git
+git clone git@gitlab.com:rubyfuza/rubyfuza.gitlab.io.git
 
-cd /rubyfuza2
+cd into the repo
 
 bundle 
 ```
@@ -23,7 +23,7 @@ bundle
 Change directories into your new project and start the preview server:
 
 ```
-cd /rubyfuza2
+cd into the repo
 middleman server
 ```
 
@@ -87,46 +87,14 @@ mymiddlemansite/
 
 ## Building the site 
 
-Heroku will automatically attempt to execute a rake task called `assets:precompile`.
+RubyFuza is running on Gitlab pages, it's a free service offered by gitlab for static sites. I have set up the pipeline so that all you have to do is create a pull request
+and the branch if successfully built will automatically deploy live, if it fails then it will notify you that it has failed. 
 
-This was originally for the benefit of Rails, but we can take advantage of this now for our own needs.
-
-I created a new Rakefile and added the following.
-
-```
-namespace :assets do
-  task :precompile do
-    sh 'middleman build'
-  end
-end
-```
-
-The task simply shells out to call `middleman build` which builds the site automatically when the site is pushed to Heroku. Middleman will output all files to the configured directory `./public_html`.
+The task simply shells out to call `middleman build` which builds the site automatically. Middleman will output all files to the configured directory `./public_html`.
 
 ## Serving the site
 
-The process of serving a static Middleman site on Heroku is quite straight forward once you understand the basics. The site will be running as a Rack app, so we’ll need a `config.ru` file. Here is what it looks like.
-
-```
-require 'rack'
-require 'rack/contrib/try_static'
-
-# Serve files from the build directory
-use Rack::TryStatic,
-  root: 'public_html',
-  urls: %w[/],
-  try: ['.html', 'index.html', '/index.html']
-
-run lambda{ |env|
-  four_oh_four_page = File.expand_path("../public_html/404/index.html", __FILE__)
-  [ 404, { 'Content-Type'  => 'text/html'}, [ File.read(four_oh_four_page) ]]
-}
-```
-
-The `Rack::TryStatic` section is how we serve up the static files that Middleman builds when the site is pushed to Heroku. Middleman has been configured to output all files into `./public_html`.
-
-If no page is served from the `Rack::Trystatic` app, the 404 page is served using the next `run` section.
-
+The site is currently being served by gitlab pages.
 
 ## Contributing
 
