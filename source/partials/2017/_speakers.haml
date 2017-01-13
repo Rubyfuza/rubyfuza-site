@@ -4,28 +4,28 @@
       %a{:name=>"speakers"}
       %span Speakers
     %ul
-      %li.speaker
-        .rounded
-          %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
-            = image_tag "speakers/you.png"
-          %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-          %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
-        %h2
-          %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
-        %p Your talk's description
-
-        #speaker100.detail
-          .links.right
-            %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-            %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
-          .name
-            = image_tag "speakers/you.png"
-            %h2 Your name right here.
-          .inner
-            %a{:href=>"http://cfp.rubyfuza.org", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
-            %br
-            %br
-            %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2016 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2016.
+      -# %li.speaker
+      -#   .rounded
+      -#     %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
+      -#       = image_tag "speakers/you.png"
+      -#     %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+      -#     %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+      -#   %h2
+      -#     %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
+      -#   %p Your talk's description
+      -#
+      -#   #speaker100.detail
+      -#     .links.right
+      -#       %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+      -#       %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+      -#     .name
+      -#       = image_tag "speakers/you.png"
+      -#       %h2 Your name right here.
+      -#     .inner
+      -#       %a{:href=>"http://cfp.rubyfuza.org", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
+      -#       %br
+      -#       %br
+      -#       %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2016 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2016.
 
       %li.speaker
         .rounded
@@ -48,6 +48,95 @@
             %p Coraline has been programming professionally in Ruby since 2007. She is the author of 25 Ruby gems and has contributed to major projects including Rspec and Rails. She is a frequent speaker at conferences around the world, including RailsConf. Coraline was a 2016 recipient of the Ruby Hero award.
 
             %p Coraline created OS4W.org, a resource for connecting all women, including women of colour and transgender women, to open source projects. She is also the creator of the Contributor Covenant, a code of conduct used in over 14,000 open source projects. She is on the board of directors for Ruby
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2016/eliza_de_jager.png"
+          %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Eliza de Jager
+        %p What the Duck?
+
+        #speaker2.detail
+          .links.right
+            %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2016/eliza_de_jager.png"
+            %h2 Eliza de Jager
+          .inner
+            %p I started my career as a Clarion developer, and then moved into the asset management space where I was exposed to various technologies. During this time I was introduced to Ruby and I never looked back! For the last year I've been employing these Ruby, Rails and other web-development skills working in the market research industry.
+            %h3 What the Duck?
+            %p In this talk I explore ways in which to make optimal use of duck typing and type conversion in everyday Ruby programs. I will explore what duck-typing really means, and when it is appropriate to use this as opposed to respond_to?, type checking or type conversion in Ruby programs. I will investigate the difference between implicit and explicit type conversion, and will also take a look at the difference between these conversion protocols and capitalized conversion functions.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2017/daniel_schierbeck.jpg"
+          %a{:href=>"https://twitter.com/dasch", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/dasch", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Daniel Schierbeck
+        %p Using Apache Kafka from Ruby
+
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/dasch", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/dasch", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/daniel_schierbeck.jpg"
+            %h2 Daniel Schierbeck
+          .inner
+            -# %p Bio
+            %h3 Using Apache Kafka from Ruby
+            %p Apache Kafka is “publish-subscribe messaging rethought as a distributed commit log” – a way for applications to produce messages that can be read by many different consumers. Kafka is rapidly gaining wide adoption, partly because of its impressive scalability but also because of what it enables: looser coupling between message producers and consumers & efficient storage of messages, allowing consumers to “go back in time”.
+            %p Until recently, there hasn’t been a battle-tested Ruby client for Kafka, though. We decided to build one, enabling advanced Kafka applications in pure Ruby.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2016/rishal_hurbans.png"
+          %a{:href=>"https://twitter.com/RishalHurbans", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/rishal-hurbans", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Rishal Hurbans
+        %p AI in Perspective
+
+        #speaker4.detail
+          .links.right
+            %a{:href=>"https://twitter.com/RishalHurbans", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/rishal-hurbans", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2016/rishal_hurbans.png"
+            %h2 Rishal Hurbans
+          .inner
+            %p Rishal is currently fulfilling the role of a Team/Technical Lead at Entelect. He is a senior software engineer designing and building solutions for various national and international blue chip clients. He has a passion for web architecture, mobile development, and design thinking methodologies. Rishal founded Prolific Idea in 2015 where innovation is cultivated through research and technology. www.prolificidea.com
+            %h3 AI in Perspective
+            %p An insight into the current state of artificial intelligence and machine learning. We will be delving into modern approaches to AI, current uses, and an overview on how to get started from a conceptual and practical perspective.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2017/brad_kingon.png"
+          %a{:href=>"https://twitter.com/brad_kingon", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/bkingon", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker5', rel: 'speakers', class: 'fancybox'} Brad Kingon
+        %p Hacking with Ruby
+
+        #speaker5.detail
+          .links.right
+            %a{:href=>"https://twitter.com/brad_kingon", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/bkingon", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/brad_kingon.png"
+            %h2 Brad Kingon
+          .inner
+            %p I work as a Ruby Developer at MWR InfoSecurity, based out of the Rivonia office, but working closely with offices around the world. Harbouring a keen interest in the cyber security space, I am interested in looking to understand how computers work at their core and I thoroughly enjoy performance optimising code.
+            %h3 Hacking with Ruby
+            %p There are many excellent tools out there for “hacking” and penetration testing, some of which are written in Ruby. Looking at two of these tools, Metasploit and Meterpreter, I will explore the area of buffer overflow exploits, to allow the attacker to gain access to the target system through a reverse_tcp payload. The target system in this case should be a Rails server.
 
 
     %div.clearfix
