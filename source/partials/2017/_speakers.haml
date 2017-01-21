@@ -185,5 +185,144 @@
             %h3 From grammar to byte-code in 20 minutes
             %p This is an insane attempt to share the steps and toolchain to build your own external DSL using ruby. The question has to be "Why?" We know how to build internal DSL's in ruby. However, external DSL's give freedom to design a grammar that is free of idiomatic ruby. That opens up a universe of possibilities. Our history of learning compiler theory is mostly painful, but the tools that exist make this viable. This is a tough talk. Like many tough things, it's laced with equal parts of stupidity.
 
+      %li.speaker
+        .rounded
+          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox', id: 'kir_shatrov'}
+            = image_tag "images/speakers/2017/kir_shatrov.png"
+          %a{:href=>"https://twitter.com/kirshatrov", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/kirs", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker8', rel: 'speakers', class: 'fancybox'} Kir Shatrov
+        %p Monorails: deal with it
+
+        #speaker8.detail
+          .links.right
+            %a{:href=>"https://twitter.com/kirshatrov", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/kirs", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/kir_shatrov.png"
+            %h2 Kir Shatrov
+          .inner
+            %p Kir Shatrov is a Developer Infrastructure Engineer at Shopify where he works on the core Rails platform and infrastructure. When not into working, Kir enjoys learning new technologies, speaking at conferences and biking.
+            %h3 Monorails: deal with it
+            %p Today Shopify is the oldest Rails application, which codebase starts in 2005 and remembers Rails 0.9. The code contains 200 models and 400 controllers. Every day hundreds of developers are working on this app in the single repository.
+            %p How do you scale Rails not in the number of requests, but from the perspective of developer experience? How to automate code reviews and prevent developers from shooting themselves in the foot? We've built a lot of internal tooling around developer environment which I'd like to share in my talk.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker9', rel: 'speaker_image', class: 'fancybox', id: 'matias_korhonen'}
+            = image_tag "images/speakers/2017/matias_korhonen.png"
+          %a{:href=>"https://twitter.com/matiaskorhonen", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/matiaskorhonen", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker9', rel: 'speakers', class: 'fancybox'} Matias Korhonen
+        %p Rails Security: above and beyond the defaults
+
+        #speaker9.detail
+          .links.right
+            %a{:href=>"https://twitter.com/matiaskorhonen", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/matiaskorhonen", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/matias_korhonen.png"
+            %h2 Matias Korhonen
+          .inner
+            %p Matias Korhonen has been writing Rails apps professionally at Kisko Labs, a small software consultancy in Finland, for almost a decade. In his spare time he works on too many side projects (including [Piranhas.co](https://www.piranhas.co/), a book price comparison site, and [TLS.care](https://tls.care/), an SSL certificate monitoring service). He also somehow manages to find time to homebrew beer.
+            %h3 Rails Security: above and beyond the defaults
+            %p Rails provides pretty decent security options straight out of the box, but can we go further and, if so, how? In this talk I'll outline what security options are available, why we'd want them, and how to go about implementing them.
+            %p I'll touch on Content Security Policies, HTTP Public Key Pinning, and other HTTP/browser security options. I'll also do a quick overview of proper SSL or TLS configuration.
+            %p What threats we're trying to protect against and who do we imagine that our adversaries are? How do we keep our users safe against a variety of attack vectors?
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker10', rel: 'speaker_image', class: 'fancybox', id: 'netto_farah'}
+            = image_tag "images/speakers/2017/netto_farah.png"
+          %a{:href=>"https://twitter.com/nettofarah", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/nettofarah", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker10', rel: 'speakers', class: 'fancybox'} Netto Farah
+        %p Fighting legacy codebases with GraphQL and Rails
+
+        #speaker10.detail
+          .links.right
+            %a{:href=>"https://twitter.com/nettofarah", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/nettofarah", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/netto_farah.png"
+            %h2 Netto Farah
+          .inner
+            %p Netto Farah is a Senior Web Engineer at IFTTT. A lover of everything Rails and Javascript, Netto is always looking for creative ways to build great user experiences on the web.
+            %h3 Fighting legacy codebases with GraphQL and Rails
+            %p GraphQL is one of the hottest technologies of the past year or two. Still, very little is talked about GraphQL outside of the realm of front-end applications.
+            %p We used a different approach at IFTTT and applied GraphQL as an integration layer for different backends and client apps.
+            %p This talk goes beyond the basic configuration of a GraphQL endpoint with Rails. I’ll cover topics such ActiveRecord Query optimization, performance monitoring, batching and share some of the challenges we ran into while building a GraphQL API that serves over 10 thousand queries per minute.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker11', rel: 'speaker_image', class: 'fancybox', id: 'de_wet_blomerus'}
+            = image_tag "images/speakers/2017/de_wet_blomerus.png"
+          %a{:href=>"https://twitter.com/dewetblomerus", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/dewetblomerus", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker11', rel: 'speakers', class: 'fancybox'} De Wet Blomerus
+        %p What I learned from applying for 107 jobs
+
+        #speaker11.detail
+          .links.right
+            %a{:href=>"https://twitter.com/dewetblomerus", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/dewetblomerus", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/de_wet_blomerus.png"
+            %h2 De Wet Blomerus
+          .inner
+            %p Service Engineer at GitLab
+            %h3 What I learned from applying for 107 jobs
+            %p Learn from my mistakes, advice I received from friends, and great outcome at the end.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker12', rel: 'speaker_image', class: 'fancybox', id: 'daniel_smith'}
+            = image_tag "images/speakers/2016/daniel_smith.png"
+          %a{:href=>"https://twitter.com/jellym4nn", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/jellymann", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker12', rel: 'speakers', class: 'fancybox'} Daniel Smith
+        %p ActionGame with Rails 5
+
+        #speaker12.detail
+          .links.right
+            %a{:href=>"https://twitter.com/jellym4nn", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/jellymann", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2016/daniel_smith.png"
+            %h2 Daniel Smith
+          .inner
+            %p Daniel Smith is a Ruby and Node.js developer at Platform45. He loves doing things new or out-of-the-ordinary. His favourite pastimes are graphics programming and monkey-patching the NilClass. He has spoken about Game Development and other topics at Jozi.rb and Pretoria.rb. His programming experience started when he wrote tic-tac-toe for DOS in Turbo Pascal. Since then he has had a keen interest in game development and graphics programming.
+            %h3 ActionGame with Rails 5
+            %p ActionCable was recently added to Rails 5's ever-increasing list of built-in awesomeness. This opens doors for developers to do even more incredible things in the Web of today. One of these things is the ability to create a real-time online multiplayer game inside a regular old Rails app.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker13', rel: 'speaker_image', class: 'fancybox', id: 'ruberto_paulo'}
+            = image_tag "images/speakers/2017/ruberto_paulo.png"
+          %a{:href=>"https://twitter.com/legend_rob", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/ruberto", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker13', rel: 'speakers', class: 'fancybox'} Ruberto Paulo
+        %p Date night with Ruby
+
+        #speaker13.detail
+          .links.right
+            %a{:href=>"https://twitter.com/legend_rob", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/ruberto", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/ruberto_paulo.png"
+            %h2 Ruberto Paulo
+          .inner
+            %p Rob started programming in high school where he swore he would never do it again. Five years later he decided to give it another go this time with Ruby, He has never looked back. He is currently at Prodigy Finance, working with an amazing team doing great things. If programmers were superheroes, Rob would be Batman. He may not have any real "superpowers", but he does have several gems on his belt and a few years experience cleaning up Gotham; one bug at a time.
+            %h3 Date night with Ruby
+            %p We all have that one language that we just love coding in. When presented with a small project it's the tool we would prefer using, that fun language. For me that language is Ruby.
+            %p I asked myself a question: Why does working on Ruby projects at work feel so different from working on projects when I am doing something at home, events, hackathons or the like?
+            %p I asked this question to many developers, their answers have lead me to rediscover my relationship with Ruby. Let me show you how I found the joy of programming in Ruby.
+
     %div.clearfix
     = partial('/global/signup')
