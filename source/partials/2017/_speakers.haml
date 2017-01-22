@@ -369,5 +369,28 @@
             %h3 The Imposter Within
             %p Imposter Syndrome impacts my day-to-day decisions and confidence, affects growth by limiting opportunities and makes me feel unworthy. I'd like to share my experience & perspective of feeling like a fraud with other software professionals.
 
+      %li.speaker
+        .rounded
+          %a{href: '#speaker16', rel: 'speaker_image', class: 'fancybox', id: 'grant_speelman'}
+            = image_tag "speakers/2015/grant_speelman.jpg"
+          %a{:href=>"https://twitter.com/grantspeelman", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/grantspeelman", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker16', rel: 'speakers', class: 'fancybox'} Grant Speelman
+        %p Feedback for the developer who codes solo
+
+        #speaker16.detail
+          .links.right
+            %a{:href=>"https://twitter.com/grantspeelman", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/grantspeelman", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2015/grant_speelman.jpg"
+            %h2 Grant Speelman
+          .inner
+            %p I like Ruby
+            %h3 Feedback for the developer who codes solo
+            %p Ruby Analytic tools can give value feedback when working alone or even as a team.
+            %p Quick overview of why feedback is important and how the following tools could be of help: rubocop, brakeman, reek, flay, rubycritic, bundler-audit, simplecov, guard, pronto, overcommit.
+
     %div.clearfix
     = partial('/global/signup')
