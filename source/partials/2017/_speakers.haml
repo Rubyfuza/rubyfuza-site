@@ -232,30 +232,6 @@
             %p I'll touch on Content Security Policies, HTTP Public Key Pinning, and other HTTP/browser security options. I'll also do a quick overview of proper SSL or TLS configuration.
             %p What threats we're trying to protect against and who do we imagine that our adversaries are? How do we keep our users safe against a variety of attack vectors?
 
-      -# %li.speaker
-      -#   .rounded
-      -#     %a{href: '#speaker10', rel: 'speaker_image', class: 'fancybox', id: 'netto_farah'}
-      -#       = image_tag "images/speakers/2017/netto_farah.png"
-      -#     %a{:href=>"https://twitter.com/nettofarah", :class=>"twitter"}= image_tag "twitter.png"
-      -#     %a{:href=>"https://github.com/nettofarah", :class=>"github"}= image_tag "github.png"
-      -#   %h2
-      -#     %a{href: '#speaker10', rel: 'speakers', class: 'fancybox'} Netto Farah
-      -#   %p Fighting legacy codebases with GraphQL and Rails
-      -#
-      -#   #speaker10.detail
-      -#     .links.right
-      -#       %a{:href=>"https://twitter.com/nettofarah", :class=>"twitter"}= image_tag "twitter.png"
-      -#       %a{:href=>"https://github.com/nettofarah", :class=>"github"}= image_tag "github.png"
-      -#     .name
-      -#       = image_tag "images/speakers/2017/netto_farah.png"
-      -#       %h2 Netto Farah
-      -#     .inner
-      -#       %p Netto Farah is a Senior Web Engineer at IFTTT. A lover of everything Rails and Javascript, Netto is always looking for creative ways to build great user experiences on the web.
-      -#       %h3 Fighting legacy codebases with GraphQL and Rails
-      -#       %p GraphQL is one of the hottest technologies of the past year or two. Still, very little is talked about GraphQL outside of the realm of front-end applications.
-      -#       %p We used a different approach at IFTTT and applied GraphQL as an integration layer for different backends and client apps.
-      -#       %p This talk goes beyond the basic configuration of a GraphQL endpoint with Rails. I’ll cover topics such ActiveRecord Query optimization, performance monitoring, batching and share some of the challenges we ran into while building a GraphQL API that serves over 10 thousand queries per minute.
-
       %li.speaker
         .rounded
           %a{href: '#speaker11', rel: 'speaker_image', class: 'fancybox', id: 'de_wet_blomerus'}
@@ -392,5 +368,48 @@
             %p Ruby Analytic tools can give value feedback when working alone or even as a team.
             %p Quick overview of why feedback is important and how the following tools could be of help: rubocop, brakeman, reek, flay, rubycritic, bundler-audit, simplecov, guard, pronto, overcommit.
 
+      %li.speaker
+        .rounded
+          %a{href: '#speaker17', rel: 'speaker_image', class: 'fancybox', id: 'kevin_mckelvin'}
+            = image_tag "speakers/2014/kevin.jpg"
+          %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker17', rel: 'speakers', class: 'fancybox'} Kevin McKelvin
+        %p What's new in Ruby 2.4
+
+        #speaker17.detail
+          .links.right
+            %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2014/kevin.jpg"
+            %h2 Kevin McKelvin
+          .inner
+            %p Kevin is the CTO at Resource Guru based in London, UK. He's a former C# developer turned polyglot, using Ruby, JavaScript and Go on a daily basis. He has strange obsessions about craftsmanship, TDD and guitars.
+            %h3  What's new in Ruby 2.4
+            %p Every Christmas we get a present in the form of a new Ruby release. Let's unwrap the new toys together in this talk.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker18', rel: 'speaker_image', class: 'fancybox', id: 'dane_balia'}
+            = image_tag "speakers/2017/dane_balia.jpg"
+          %a{:href=>"https://twitter.com/danebalia", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/daneb", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker18', rel: 'speakers', class: 'fancybox'} Dane Balia
+        %p The 360˚ Developer
+
+        #speaker18.detail
+          .links.right
+            %a{:href=>"https://twitter.com/danebalia", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/daneb", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2017/dane_balia.jpg"
+            %h2 Dane Balia
+          .inner
+            %p I'm ruby code still in production, debugged every now and then, and mostly spending time internalizing my refactors.
+            %h3  The 360˚ Developer
+            %p My journey discovering a pathway to mastery through “balance”. 3 Tales that focus on three skill areas that can make us better problem solvers, better employees and overall better developers.
     %div.clearfix
     = partial('/global/signup')

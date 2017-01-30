@@ -1,236 +1,233 @@
--# %section#schedule
--#   .wrapper
--#     %h1.heading
--#       %span Schedule
--#
--#     .timeline
--#       .half
--#         %h2
--#           Day One
--#           %span Thursday, 4 February 2016
--#         %ul
--#           %li
--#             %time 8:30
--#             %p Registration
--#
--#           %li
--#             %time 9:30
--#             %p.speaker
--#               = image_tag "speakers/2014/lance.jpg"
--#               Lance Gleason
--#               %a{:href=>"https://twitter.com/lgleasain"} @lgleasain
--#               %span Welcome
--#
--#           %li
--#             %time 9:40
--#             %p.speaker
--#               = image_tag "speakers/2016/sarah_mei.jpg"
--#               Sarah Mei
--#               %a{:href=>"https://twitter.com/sarahmei"} @sarahmei
--#               %span Factory, Workshop, Stage
--#
--#           %li
--#             %time 10:30
--#             %p.speaker
--#               = image_tag "speakers/2016/assaf.png"
--#               Assaf Gerber
--#               %a{:href=>"https://twitter.com/assafgelber"} @assafgelber
--#               %span Beating Poker With The Help Of Ruby
--#
--#           %li
--#             %time 11:00
--#             %p Break
--#
--#           %li
--#             %time 11:30
--#             %p.speaker
--#               = image_tag "speakers/2016/ridhwana.png"
--#               Ridhwana Khan
--#               %a{:href=>"https://twitter.com/Ridhwana_K"} @Ridhwana_K
--#               %span Building a better programming interface for your application
--#
--#           %li
--#             %time 12:00
--#             %p.speaker
--#               = image_tag "speakers/2016/rishal_hurbans.png"
--#               Rishal Hurbans
--#               %a{:href=>"https://twitter.com/RishalHurbans"} @RishalHurbans
--#               %span Developer Design Thinking
--#
--#           %li
--#             %time 12:30
--#             %p Lightning Talks
--#
--#           %li
--#             %time 13:00
--#             %p Lunch
--#
--#           %li
--#             %time 14:00
--#             %p.speaker
--#               = image_tag "speakers/2013/simonstewart.jpg"
--#               Simon Stewart
--#               %a{:href=>"https://twitter.com/SimonStewart"} @SimonStewart
--#               %span Freelancing rates ... without using a random number generator
--#
--#           %li
--#             %time 14:30
--#             %p.speaker
--#               = image_tag "speakers/2015/simon_van_dyk.png"
--#               Simon Van Dyk
--#               %a{:href=>"https://twitter.com/siefi"} @siefi
--#               %span Elixir. Much distributed. Such reliable.
--#
--#           %li
--#             %time 15:00
--#             %p.speaker
--#               = image_tag "speakers/2014/nelson.jpg"
--#               Nelson Pascoal
--#               %a{:href=>"https://twitter.com/foomip"} @foomip
--#               %span Reactive Programming Principles
--#
--#           %li
--#             %time 15:30
--#             %p Break
--#
--#           %li
--#             %time 16:00
--#             %p.speaker
--#               = image_tag "speakers/2015/steven_mcd.png"
--#               Steven McDonald
--#               %a{:href=>"https://twitter.com/stevenmcd"} @StevenMcD_code
--#               %span Improving your Craft through Communication
--#
--#           %li
--#             %time 16:30
--#             %p.speaker
--#               = image_tag "speakers/2016/daphne_calitz.png"
--#               Daphne Calitz
--#               %a{:href=>"https://twitter.com/DaphneCalitz"} @DaphneCalitz
--#               %span Using LocalStorage for Progressive Saving
--#
--#           %li
--#             %time 17:00
--#             %p Drinkup
--#
--#       .half
--#         %h2
--#           Day Two
--#           %span Friday, 5 February 2016
--#         %ul
--#           %li
--#             %time 9:00
--#             %p Arrival
--#
--#           %li
--#             %time 9:30
--#             %p.speaker
--#               = image_tag "speakers/2016/aja_hammerly.png"
--#               Aja Hammerly
--#               %a{:href=>"https://twitter.com/thagomizer_rb"} @thagomizer_rb
--#               %span Stupid Ideas For Many Computers
--#
--#           %li
--#             %time 10:00
--#             %p.speaker
--#               = image_tag "speakers/2016/julian_cheal.png"
--#               Julian Cheal
--#               %a{:href=>"https://twitter.com/juliancheal"} @juliancheal
--#               %span (M)Ruby, Robots, and how to control the World.
--#
--#           %li
--#             %time 10:30
--#             %p Lightning Talks
--#
--#           %li
--#             %time 11:00
--#             %p Break
--#
--#           %li
--#             %time 11:30
--#             %p.speaker
--#               = image_tag "speakers/2015/brendon_mclean.jpg"
--#               Brendon McLean
--#               %a{:href=>"https://twitter.com/brendon9x"} @brendon9x
--#               %span Literate Programming in Ruby
--#
--#           %li
--#             %time 12:00
--#             %p.speaker
--#               = image_tag "speakers/2016/kelvin_smith.png"
--#               Kelvin Smith
--#               %a{:href=>"https://twitter.com/oneKelvinSmith"} @oneKelvinSmith
--#               %span Teaching Kids to Programme with Gosu and Sonic Pi
--#
--#           %li
--#             %time 12:30
--#             %p.speaker
--#               = image_tag "speakers/2016/piwe_tony.png"
--#               Siwaphiwe Tshona and Ciam a Mbay Tony
--#               %span Kiddibot
--#
--#           %li
--#             %time 13:00
--#             %p Lunch
--#
--#           %li
--#             %time 14:00
--#             %p.speaker
--#               = image_tag "speakers/2016/daniel_smith.jpg"
--#               Daniel Smith
--#               %a{:href=>"https://twitter.com/jellym4nn"} @jellym4nn
--#               %span RubyGL
--#
--#           %li
--#             %time 14:30
--#             %p.speaker
--#               = image_tag "speakers/2014/kevin.jpg"
--#               Kevin McKelvin
--#               %a{:href=>"https://twitter.com/kmckelvin"} @kmckelvin
--#               %span Going Native
--#
--#           %li
--#             %time 15:00
--#             %p.speaker
--#               = image_tag "speakers/2016/austin_fagan.png"
--#               Austin Fagan
--#               %a{:href=>"https://twitter.com/austin_fagan"} @austin_fagan
--#               %span Assumption is the mother of all fuck-ups
--#
--#           %li
--#             %time 15:30
--#             %p Break
--#
--#           %li
--#             %time 16:00
--#             %p.speaker
--#               = image_tag "speakers/2016/eliza_de_jager.png"
--#               Eliza de Jager
--#               %a{:href=>"https://twitter.com/code_kitten"} @code_kitten
--#               %span Eigenclasses and other Meta-programming Concepts
--#
--#           %li
--#             %time 16:30
--#             %p.speaker
--#               = image_tag "speakers/2013/rory.jpg"
--#               Rory McKinley
--#               %a{:href=>"https://twitter.com/rorymckinley"} @rorymckinley
--#               %span What defines quality software?
--#
--#           %li
--#             %time 17:00
--#             %p.speaker
--#               = image_tag "speakers/2016/gabriel_fortuna.jpg"
--#               Gabriel Fortuna
--#               %a{:href=>"https://twitter.com/gee_forr"} @gee_forr
--#               %span Next level release management using feature flags
--#
--#           %li
--#             %time 17:30
--#             %p Leave for Dinner
--#
--#     / .full
--#     /   %h2
--#     /     Download the
--#     /     %a{:href=>"/downloads/Rubyfuza%202014%20Program%20Guide.pdf"} Program Guide
--#     /     (pdf, 3.7MB)
+%section#schedule
+  .wrapper
+    %h1.heading
+      %span Schedule
+
+    .timeline
+      .half
+        %h2
+          Day One
+          %span Thursday, 2 February 2017
+        %ul
+          %li
+            %time 8:30
+            %p Registration
+
+          %li
+            %time 9:30
+            %p.speaker
+              = image_tag "speakers/marcheiligers.jpeg"
+              Marc Heiligers
+              %a{:href=>"https://twitter.com/rubyfuza"} @rubyfuza
+              %span Welcome
+
+          %li
+            %time 9:40
+            %p.speaker
+              = image_tag "speakers/2017/coraline_ada.jpg"
+              Coraline Ada Ehmke
+              %a{:href=>"https://twitter.com/CoralineAda"} @CoralineAda
+              %span Metaphors Are Similes. Similes Are Like Metaphors
+
+          %li
+            %time 10:30
+            %p.speaker
+              = image_tag "images/speakers/2017/eliza_de_jager.png"
+              Eliza de Jager
+              %a{:href=>"https://twitter.com/code_kitten"} @code_kitten
+              %span What the Duck?
+
+          %li
+            %time 11:00
+            %p Break
+
+          %li
+            %time 11:30
+            %p.speaker
+              = image_tag "images/speakers/2017/kir_shatrov.png"
+              Kir Shatrov
+              %a{:href=>"https://twitter.com/kirshatrov"} @kirshatrov
+              %span Monorails: deal with it
+
+          %li
+            %time 12:00
+            %p.speaker
+              = image_tag "images/speakers/2016/daniel_smith.png"
+              Daniel Smith
+              %a{:href=>"https://twitter.com/jellym4nn"} @jellym4nn
+              %span ActionGame with Rails 5
+
+          %li
+            %time 12:30
+            %p Lightning Talks
+
+          %li
+            %time 13:00
+            %p Lunch
+
+          %li
+            %time 14:00
+            %p.speaker
+              = image_tag "images/speakers/2017/aslam_khan.jpg"
+              Aslam Khan
+              %a{:href=>"https://twitter.com/aslamkhn"} @aslamkhn
+              %span From grammar to byte-code in 20 minutes
+
+          %li
+            %time 14:30
+            %p.speaker
+              = image_tag "speakers/2015/grant_speelman.jpg"
+              Grant Petersen-Speelman
+              %a{:href=>"https://twitter.com/grantspeelman"} @grantspeelman
+              %span Feedback for the developer who codes solo
+
+          %li
+            %time 15:00
+            %p.speaker
+              = image_tag "images/speakers/2017/de_wet_blomerus.png"
+              De Wet Blomerus
+              %a{:href=>"https://twitter.com/dewetblomerus"} @dewetblomerus
+              %span What I learned from applying for 107 jobs
+
+          %li
+            %time 15:30
+            %p Break
+
+          %li
+            %time 16:00
+            %p.speaker
+              = image_tag "speakers/2017/dane_balia.jpg"
+              Dane Balia
+              -# %a{:href=>"https://twitter.com/tbd"} @tbd
+              %span The 360˚ Developer
+
+          %li
+            %time 16:30
+            %p.speaker
+              = image_tag "images/speakers/2016/rishal_hurbans.png"
+              Rishal Hurbans
+              %a{:href=>"https://twitter.com/RishalHurbans"} @RishalHurbans
+              %span AI in Perspective
+
+          %li
+            %time 17:00
+            %p Cocktails and Networking
+
+      .half
+        %h2
+          Day Two
+          %span Friday, 3 February 2017
+        %ul
+          %li
+            %time 9:00
+            %p Arrival
+
+          %li
+            %time 9:30
+            %p.speaker
+              = image_tag "speakers/marcheiligers.jpeg"
+              Marc Heiligers
+              %a{:href=>"https://twitter.com/rubyfuza"} @rubyfuza
+              %span Welcome
+
+          %li
+            %time 9:40
+            %p.speaker
+              -# = image_tag "speakers/2017/tbd.jpeg"
+              To be Announced
+              -# %a{:href=>"https://twitter.com/tbd"} @tbd
+              -# %span From the the ground up!
+
+          %li
+            %time 10:30
+            %p.speaker
+              -# = image_tag "speakers/2017/tbd.png"
+              To be Announced
+              -# %a{:href=>"https://twitter.com/tbd"} @tbd
+              -# %span tbd
+
+          %li
+            %time 11:00
+            %p Break
+
+          %li
+            %time 11:30
+            %p.speaker
+              = image_tag "images/speakers/2017/matias_korhonen.png"
+              Matias Korhonen
+              %a{:href=>"https://twitter.com/matiaskorhonen"} @matiaskorhonen
+              %span Rails Security: above and beyond the defaults
+
+          %li
+            %time 12:00
+            %p.speaker
+              = image_tag "images/speakers/2017/brad_kingon.png"
+              Brad Kingon
+              %a{:href=>"https://twitter.com/brad_kingon"} @brad_kingon
+              %span Hacking with Ruby
+
+          %li
+            %time 12:30
+            %p.speaker
+              = image_tag "images/speakers/2017/andre_helberg.png"
+              André-Marthin Helberg
+              %a{:href=>"https://twitter.com/A_Helberg"} @A_Helberg
+              %span Level up in Ruby while keeping all your hearts
+
+          %li
+            %time 13:00
+            %p Lunch
+
+          %li
+            %time 14:00
+            %p.speaker
+              = image_tag "images/speakers/2017/daniel_schierbeck.jpg"
+              Daniel Schierbeck
+              %a{:href=>"https://twitter.com/dasch"} @dasch
+              %span Using Apache Kafka from Ruby
+
+          %li
+            %time 14:30
+            %p.speaker
+              = image_tag "images/speakers/2017/ruberto_paulo.png"
+              Ruberto Paulo
+              %a{:href=>"https://twitter.com/legend_rob"} @legend_rob
+              %span Date night with Ruby
+
+          %li
+            %time 15:00
+            %p.speaker
+              = image_tag "speakers/2014/kevin.jpg"
+              Kevin McKelvin
+              %a{:href=>"https://twitter.com/kmckelvin"} @kmckelvin
+              %span What's new in Ruby 2.4
+
+          %li
+            %time 15:30
+            %p Break
+
+          %li
+            %time 16:00
+            %p.speaker
+              = image_tag "images/speakers/2017/clarice_bouwer.jpg"
+              Clarice Bouwer
+              %a{:href=>"https://twitter.com/cbillowes"} @cbillowes
+              %span The Imposter Within
+
+          %li
+            %time 16:30
+            %p.speaker
+              = image_tag "images/speakers/2017/patrick_vine.png"
+              Patrick Vine
+              %a{:href=>"https://twitter.com/patrick_vine"} @patrick_vine
+              %span Building a learning culture.
+
+          %li
+            %time 17:00
+            %p Leave for Dinner
+
+    / .full
+    /   %h2
+    /     Download the
+    /     %a{:href=>"/downloads/Rubyfuza%202014%20Program%20Guide.pdf"} Program Guide
+    /     (pdf, 3.7MB)
