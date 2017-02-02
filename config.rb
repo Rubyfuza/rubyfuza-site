@@ -77,6 +77,7 @@ configure :build do
   activate :relative_assets
   activate :minify_html
   activate :directory_indexes
+  activate :gzip
   # Or use a different image path
   # set :http_prefix, "/images/"
 
