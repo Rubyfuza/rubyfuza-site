@@ -12,3 +12,4 @@ gem "therubyracer"
 gem "rack-contrib"
 
 gem 'middleman-imageoptim'
+gem "middleman-minify-html"
