@@ -13,7 +13,7 @@
         %h2
           %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
         %p Your talk's description
-      
+
         #speaker100.detail
           .links.right
             %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
@@ -35,7 +35,7 @@
           %a{:href=>"https://github.com/nateberkopec/", :class=>"github"}= image_tag "github.png"
         %h2
           %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Nate Berkopec
-        -# %p talk name goes here 
+        %p Orbital Rocket Guidance with Ruby
 
         #speaker1.detail
           .links.right
@@ -45,11 +45,15 @@
             = image_tag "speakers/2018/nate_berkopec.jpg"
             %h2 Nate Berkopec
           .inner
-            %p 
-              Nate is a freelancer and consultant that focuses on Ruby web application performance. Author of The Complete Guide to Rails Performance and blogger at 
+            %p
+              Nate is a freelancer and consultant that focuses on Ruby web application performance. Author of The Complete Guide to Rails Performance and blogger at
               %a(href="https://speedshop.co")
                 https://www.speedshop.co/.
               speedshop.co. He appeared on Shark Tank, ABC’s primetime entrepreneurship show, when he was nineteen years old. Nate recently moved to Taos, New Mexico after eight years in New York City.
+            %h3 Orbital Rocket Guidance with Ruby
+            %p Let’s make Ruby go fast - 18,000 MPH fast! Using the popular space simulator Kerbal Space Program and some remote procedure calls, we’re going to use Ruby to launch (simulated) rockets into space. Using the algorithms and techniques developed for the Apollo Guidance Computer, we’ll write a program that can manage several tasks concurrently but also survive hard restarts and unplanned errors. Finally, we’ll launch a Saturn V rocket, controlled by a Ruby program that emulates space computers of the past.
+
+
 
     %div.clearfix
     = partial('/global/signup')
