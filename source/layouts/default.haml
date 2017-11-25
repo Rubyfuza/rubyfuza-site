@@ -77,16 +77,20 @@
      if(window.location.hash) {
       $(thisHash).fancybox({
         padding: 0
-        // more API options
       }).trigger('click');
      }
      $('.fancylink').fancybox({
         padding: 0
-        // more API options
      });
-    }); // ready
+    });
 
-  -# end scripts
+    $("nav").find("a").click(function(e) {
+        e.preventDefault();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
+        });
+    });
 
   -# Change UAXXXXXXXX1 to be your site's ID
   %script
