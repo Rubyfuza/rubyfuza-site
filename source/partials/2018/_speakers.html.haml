@@ -1,0 +1,59 @@
+%section#speakers
+  .wrapper
+    %h1.heading
+      %a{name: "speakers"}
+      %span Speakers
+    %ul
+      %li.speaker
+        .rounded
+          %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
+            = image_tag "speakers/you.png"
+          %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
+        %p Your talk's description
+
+        #speaker100.detail
+          .links.right
+            %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/you.png"
+            %h2 Your name right here.
+          .inner
+            %a{:href=>"http://cfp.rubyfuza.org/events/rubyfuza-2018-cfp", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
+            %br
+            %br
+            %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2018 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2017.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox', id: 'nate_berkopec'}
+            = image_tag "speakers/2018/nate_berkopec.jpg"
+          %a{:href=>"https://twitter.com/nateberkopec/", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/nateberkopec/", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Nate Berkopec
+        %p Orbital Rocket Guidance with Ruby
+
+        #speaker1.detail
+          .links.right
+            %a{:href=>"https://twitter.com/nateberkopec/", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/nateberkopec/", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/nate_berkopec.jpg"
+            %h2 Nate Berkopec
+          .inner
+            %p
+              Nate is a freelancer and consultant that focuses on Ruby web application performance. Author of The Complete Guide to Rails Performance and blogger at
+              %a(href="https://speedshop.co")
+                https://www.speedshop.co/.
+              speedshop.co. He appeared on Shark Tank, ABC’s primetime entrepreneurship show, when he was nineteen years old. Nate recently moved to Taos, New Mexico after eight years in New York City.
+            %h3 Orbital Rocket Guidance with Ruby
+            %p Let’s make Ruby go fast - 18,000 MPH fast! Using the popular space simulator Kerbal Space Program and some remote procedure calls, we’re going to use Ruby to launch (simulated) rockets into space. Using the algorithms and techniques developed for the Apollo Guidance Computer, we’ll write a program that can manage several tasks concurrently but also survive hard restarts and unplanned errors. Finally, we’ll launch a Saturn V rocket, controlled by a Ruby program that emulates space computers of the past.
+
+
+
+    %div.clearfix
+    = partial('partials/global/signup')

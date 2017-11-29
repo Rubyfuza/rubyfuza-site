@@ -1,15 +1,16 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
+# If you do not have OpenSSL installed, change
+# the following line to use 'http://'
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.4.0"
+# For faster file watcher updates on Windows:
+gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+# Windows does not come with time zone data
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
+# Middleman Gems
+gem 'middleman', '~> 4.2'
+gem 'middleman-livereload', '~> 3.4'
+gem 'middleman-compass'
+gem 'middleman-minify-html'
 gem "therubyracer"
-
-gem "rack-contrib"
-
-gem 'middleman-imageoptim'
-gem "middleman-minify-html"
