@@ -3,6 +3,25 @@
     %h1.heading
       %a{:name=>"sponsors"}
       %span Sponsors
+    %ul.sponsors-list
+      %li.third
+      %li.third
+        %a{:href=>"#zappi", :class=>"info fancybox", rel: 'sponsors', :title=>"Zappi"}
+          = image_tag "logos/zappi.png"
+        .row
+          %a{:href=>"https://www.zappistore.com/", :target=>"_blank", :title=>"OfferZen"} zappistore.com
+        %small Ruby-level sponsor
+
+        #zappi.detail
+          %a{:href=>"https://www.zappistore.com/"}
+            = image_tag "logos/zappi2.png", :class => 'square'
+          %p We change the way companies access consumer insight by developing the most transformative, innovative solutions on the market.
+          %p Our mission? To provide an automated platform for buying cost-effective world-class research services at lightning fast speed - without trading off on quality.
+          %p To do this, we partner with the world's leading research agencies and supply off-the-shelf products designed to solve specific business issues (concept testing, new product development, creative testing, and social media monitoring).
+          %p This frees our clients from outmoded research methods, reinforces their decision-making, and enables them to test earlier and more often.
+
+          %span.right Ruby-level sponsor
+          %a{:href=>"https://www.zappistore.com/", :target=>"_blank", :title=>"OfferZen"} zappistore.com
 
     %ul.sponsors-list
       %li.third
@@ -48,7 +67,7 @@
     %h2.highlight
       Interested in sponsoring this event?
       Check out the
-      %a{:href=>"/downloads/Rubyfuza%202017%20Sponsorship%20Prospectus.pdf"} prospectus
+      %a{:href=>"/downloads/Rubyfuza%202018%20Sponsorship%20Prospectus.pdf"} prospectus
       and drop us an
       = link_to 'e-mail', 'mailto:sponsor@rubyfuza.org'
       Last year's
