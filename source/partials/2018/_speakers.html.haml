@@ -78,5 +78,58 @@
             %p Recently, I’ve been given the opportunity to be a part of a Techwomen program in Silicon Valley, and it has expanded my mind to lessons that have helped me to progress in my career. 
             %p I’d love to share my learnings around the value of mentorship, diversity in leadership, the art of storytelling and the gratification of social impact.
 
+      %li.speaker
+        .rounded
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2017/eliza_de_jager.png"
+          %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Eliza de Jager
+        %p Around the Ruby Block
+
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2017/eliza_de_jager.png"
+            %h2 Eliza de Jager
+          .inner
+            %p I started my career as a Clarion developer, and then moved into the asset management space where I was exposed to various technologies. During this time I was introduced to Ruby and I never looked back! For the last year I've been employing these Ruby, Rails and other web-development skills working in the market research industry.
+            %h3 Around the Ruby Block
+            %p Ever noticed how flexible the use of blocks can make Ruby code?
+            %p They allow us to reuse code easily, and to dynamically define not only method names but also method bodies, thereby essentially making metaprogramming possible.
+            %p In this talk we properly define blocks as closures.
+            %p We discuss scope gates and how blocks manage to get around them, and how lambdas take this even further by allowing us to use variables defined in a different scope from where the lambda is executed inside the lambda body. 
+            %p We also take a look at what goes on in the Ruby stack and heap which makes all of this possible.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+            = image_tag "images/speakers/2018/tamar_rucham.jpg"
+          %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Tamar Rucham
+        %p Growing data in a Ruby world
+
+        #speaker4.detail
+          .links.right
+            %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "images/speakers/2018/tamar_rucham.jpg"
+            %h2 Tamar Rucham
+          .inner
+            %p "This is 10% luck, 20% skill
+            %p 15% concentrated power of will
+            %p 5% pleasure, 50% pain
+            %p And 100% reason to remember the name"
+            %p Also 10 years as a software developer. 4 companies. 2 continents and too many languages.
+            %h3 Growing data in a Ruby world
+            %p When your Rails app starts to really grow you need to start thinking of creative solutions for your data storage needs. 
+            %p In this talk I'll describe the solution we came up with in GEM (GoDaddy's Email Marketing) for storing our customer's customers information - well over a billion records - in a scalable searchable way.
+
     %div.clearfix
     = partial('partials/global/signup')
