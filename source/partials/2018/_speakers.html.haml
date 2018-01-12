@@ -4,32 +4,32 @@
       %a{name: "speakers"}
       %span Speakers
     %ul
+      -# %li.speaker
+      -#   .rounded
+      -#     %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
+      -#       = image_tag "speakers/you.png"
+      -#     %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+      -#     %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+      -#   %h2
+      -#     %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
+      -#   %p Your talk's description
+
+      -#   #speaker100.detail
+      -#     .links.right
+      -#       %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
+      -#       %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
+      -#     .name
+      -#       = image_tag "speakers/you.png"
+      -#       %h2 Your name right here.
+      -#     .inner
+      -#       %a{:href=>"http://cfp.rubyfuza.org/events/rubyfuza-2018-cfp", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
+      -#       %br
+      -#       %br
+      -#       %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2018 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2017.
+
       %li.speaker
         .rounded
-          %a{href: '#speaker100', rel: 'speaker_image', class: 'fancybox', id: 'you'}
-            = image_tag "speakers/you.png"
-          %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-          %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
-        %h2
-          %a{href: '#speaker100', rel: 'speakers', class: 'fancybox'} You?
-        %p Your talk's description
-
-        #speaker100.detail
-          .links.right
-            %a{:href=>"https://twitter.com/rubyfuza/", :class=>"twitter"}= image_tag "twitter.png"
-            %a{:href=>"https://github.com/Rubyfuza/", :class=>"github"}= image_tag "github.png"
-          .name
-            = image_tag "speakers/you.png"
-            %h2 Your name right here.
-          .inner
-            %a{:href=>"http://cfp.rubyfuza.org/events/rubyfuza-2018-cfp", :class=>"button button-3d button-primary button-rounded"} Submit your talk today!
-            %br
-            %br
-            %p Rubyfuza is the only African conference for Ruby developers. The event comprises of two days of single-track presentations and an additional workshop day. The organizers of Rubyfuza 2018 is encouraging the submission of proposals for 30-minute presentations OR workshops related to Ruby development. Sessions may be geared toward non-expert audiences or focus on topics relevant to experienced developers. The deadline to submit proposals is December 31, 2017.
-
-      %li.speaker
-        .rounded
-          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox', id: 'nate_berkopec'}
+          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox', id: 'nate'}
             = image_tag "speakers/2018/nate_berkopec.jpg"
           %a{:href=>"https://twitter.com/nateberkopec/", :class=>"twitter"}= image_tag "twitter.png"
           %a{:href=>"https://github.com/nateberkopec/", :class=>"github"}= image_tag "github.png"
@@ -71,24 +71,71 @@
             = image_tag "speakers/2018/ridhwana_khan.jpg"
             %h2 Ridhwana Khan
           .inner
-            %p I am an extremely passionate software developer. I am also a co-founder of a software development company called Zero One, a co-organizer of a Ladies that UX meetup group and a co-founder of an NPO called Kasi-Maths focussed in the education sector. 
+            %p I am an extremely passionate software developer. I am also a co-founder of a software development company called Zero One, a co-organizer of a Ladies that UX meetup group and a co-founder of an NPO called Kasi-Maths focussed in the education sector.
             %p I love being able to constantly learn new and exciting things that I can put into practice.
             %h3 Lessons learnt in pursuit of growth
             %p Growth has always been a vital part in ensuring that I lead a meaningful career.
-            %p Recently, I’ve been given the opportunity to be a part of a Techwomen program in Silicon Valley, and it has expanded my mind to lessons that have helped me to progress in my career. 
+            %p Recently, I’ve been given the opportunity to be a part of a Techwomen program in Silicon Valley, and it has expanded my mind to lessons that have helped me to progress in my career.
             %p I’d love to share my learnings around the value of mentorship, diversity in leadership, the art of storytelling and the gratification of social impact.
 
       %li.speaker
         .rounded
-          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'yannick'}
+            = image_tag "speakers/2018/aka_brou_yannick.png"
+          %a{:href=>"https://twitter.com/akabyannick", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/codecaiine", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Yannick-Noel AKA
+        %p Build a great UX with Progressive Web Apps on Rails
+
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/akabyannick", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/codecaiine", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/aka_brou_yannick.png"
+            %h2 Yannick-Noel AKA
+          .inner
+            %p My Name is Yannick Aka, 4 years as developer experience and entrepreneur in training at Meltwater Entrepreneurial School of Technology (MEST) at Accra, Ghana where i'm building Tech company.
+            %p I'm Mozillian from 3 Years and Mozilla Tech Speaker, also organizer, speaker at Google Developers Group SSA community.
+            %h3 Build a great UX with Progressive Web Apps on Rails
+            %p Progressive Web App technology is new and rapidly growing.
+            %p The Rails community hasn't had a clear path to integrating PWA technology, until now.
+            %p In this talk, I'll demonstrate how to turn your Rails app into a Progressive Web App and build a great design UX design.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox', id: 'ben'}
+            = image_tag "speakers/2018/ben_janecke.png"
+          %a{:href=>"https://twitter.com/BenJanecke", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/BenJanecke", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Ben Janecke
+        %p Lessons learnt in pursuit of growth
+
+        #speaker4.detail
+          .links.right
+            %a{:href=>"https://twitter.com/BenJanecke", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/BenJanecke", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/ben_janecke.png"
+            %h2 Ben Janecke
+          .inner
+            %p Ben is just a developer and likes keeping things simple.
+            %h3 Lessons learnt in pursuit of growth
+            %p A look at how we glue things together in Ruby, all the way from friction welding with classes to duct taping with blocks, procs and lambdas.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox', id: 'elizer'}
             = image_tag "images/speakers/2017/eliza_de_jager.png"
           %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
           %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
         %h2
-          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Eliza de Jager
+          %a{href: '#speaker5', rel: 'speakers', class: 'fancybox'} Eliza de Jager
         %p Around the Ruby Block
 
-        #speaker3.detail
+        #speaker5.detail
           .links.right
             %a{:href=>"https://twitter.com/code_kitten", :class=>"twitter"}= image_tag "twitter.png"
             %a{:href=>"https://github.com/epdejager", :class=>"github"}= image_tag "github.png"
@@ -101,20 +148,44 @@
             %p Ever noticed how flexible the use of blocks can make Ruby code?
             %p They allow us to reuse code easily, and to dynamically define not only method names but also method bodies, thereby essentially making metaprogramming possible.
             %p In this talk we properly define blocks as closures.
-            %p We discuss scope gates and how blocks manage to get around them, and how lambdas take this even further by allowing us to use variables defined in a different scope from where the lambda is executed inside the lambda body. 
+            %p We discuss scope gates and how blocks manage to get around them, and how lambdas take this even further by allowing us to use variables defined in a different scope from where the lambda is executed inside the lambda body.
             %p We also take a look at what goes on in the Ruby stack and heap which makes all of this possible.
 
       %li.speaker
         .rounded
-          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox', id: 'elizer_de_jarger'}
+          %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox', id: 'jacques'}
+            = image_tag "speakers/2018/jacques_visser.png"
+          %a{:href=>"https://twitter.com/", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker6', rel: 'speakers', class: 'fancybox'} Jacques Visser
+        %p Building Ruby in Ruby
+
+        #speaker6.detail
+          .links.right
+            %a{:href=>"https://twitter.com/", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/jacques_visser.png"
+            %h2 Jacques Visser
+          .inner
+            %p Studied Electrical Engineering at Wits. Currently working on Docfox: a fintech startup. Prefers Vim over most things.
+            %h3 Building Ruby in Ruby
+            %p With some weird stunts we can rebuild core bits of Ruby in Ruby itself.
+            %p In this talk we will harness the power of defining things by what they do, not what they are.
+            %p You’ll walk away with two things: some code that should never ever make it’s way into production and a few neat ideas that have been around since the 1930’s.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox', id: 'tamar'}
             = image_tag "images/speakers/2018/tamar_rucham.jpg"
           %a{:href=>"https://twitter.com/tamarucham", :class=>"twitter"}= image_tag "twitter.png"
           %a{:href=>"https://github.com/tamarr", :class=>"github"}= image_tag "github.png"
         %h2
-          %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Tamar Rucham
+          %a{href: '#speaker7', rel: 'speakers', class: 'fancybox'} Tamar Rucham
         %p Growing data in a Ruby world
 
-        #speaker4.detail
+        #speaker7.detail
           .links.right
             %a{:href=>"https://twitter.com/tamarucham", :class=>"twitter"}= image_tag "twitter.png"
             %a{:href=>"https://github.com/tamarr", :class=>"github"}= image_tag "github.png"
@@ -128,8 +199,172 @@
             %p And 100% reason to remember the name"
             %p Also 10 years as a software developer. 4 companies. 2 continents and too many languages.
             %h3 Growing data in a Ruby world
-            %p When your Rails app starts to really grow you need to start thinking of creative solutions for your data storage needs. 
+            %p When your Rails app starts to really grow you need to start thinking of creative solutions for your data storage needs.
             %p In this talk I'll describe the solution we came up with in GEM (GoDaddy's Email Marketing) for storing our customer's customers information - well over a billion records - in a scalable searchable way.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox', id: 'cobus'}
+            = image_tag "speakers/2018/cobus_bernard.png"
+          %a{:href=>"https://twitter.com/cobusbernard", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/cobusbernard", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker8', rel: 'speakers', class: 'fancybox'} Cobus Bernard
+        %p Dockerizing Ruby apps and moving off Engine Yard
+
+        #speaker8.detail
+          .links.right
+            %a{:href=>"https://twitter.com/cobusbernard", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/cobusbernard", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/cobus_bernard.png"
+            %h2 Cobus Bernard
+          .inner
+            %p Cobus used to call himself a developer, then he decided that a decade of dealing with having code flung over the wall at the ops people was enough.
+            %p He now focuses on infrastructure and deployment automation, and helping teams adopt modern DevOps practices at Prodigy Finance.
+            %p As an advocate of DevOps principles, he’s building a community around DevOps in Cape Town, having founded and helped organise both the Cape Town DevOps meetup group in 2015, and DevOpsDays Cape Town in 2016.
+            %h3 Dockerizing Ruby apps and moving off Engine Yard
+            %p Growth has always been a vital part in ensuring that I lead a meaningful career.
+            %p Recently, I’ve been given the opportunity to be a part of a Techwomen program in Silicon Valley, and it has expanded my mind to lessons that have helped me to progress in my career.
+            %p I’d love to share my learnings around the value of mentorship, diversity in leadership, the art of storytelling and the gratification of social impact.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker9', rel: 'speaker_image', class: 'fancybox', id: 'robert'}
+            = image_tag "speakers/2018/rob_fall.png"
+          %a{:href=>"https://twitter.com/robertfall", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/robertfall", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker9', rel: 'speakers', class: 'fancybox'} Rob Fall
+        %p Tomorrow's UI Architecture — Structuring UI applications Around Features & Why You Might Want To
+
+        #speaker9.detail
+          .links.right
+            %a{:href=>"https://twitter.com/robertfall", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/robertfall", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/rob_fall.png"
+            %h2 Rob Fall
+          .inner
+            %p Robert is a consultant focused on what makes software teams great — most recently web application teams at companies like Allan Gray and GoDaddy.
+            %p He lives at the intersection between people and software design and has dreams about improving Developer Experience.
+            %h3 Tomorrow's UI Architecture — Structuring UI applications Around Features & Why You Might Want To
+            %p Web pages are yesterday's news — UI platforms are converging and the page abstraction doesn't cut it anymore.
+            %p PWAs are further blurring the lines between web and native, and virutal and augmented reality are on the horizon.
+            %p Team dynamics are evolving and the learnings taken from micro-services are making their way to the front end. This talk explores using "scenes" to structure UI applications and how the benefits gained throughout a product's life.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker10', rel: 'speaker_image', class: 'fancybox', id: 'simon_and_arrie'}
+            = image_tag "speakers/2018/simon_and_arrie.png"
+        %h2
+          %a{href: '#speaker10', rel: 'speakers', class: 'fancybox'} Simon and Arrie
+        %p Fantastic chatbots and where to find them
+
+        #speaker10.detail
+          .name
+            = image_tag "speakers/2018/simon_and_arrie.png"
+            %h2 Simon and Arrie
+          .inner
+            %p Simon:
+            %p Simon is a technical product lead at Platform45, with interest in software from design & development to machine learning.
+            %p
+              On his journey, Simon loves sharing his learnings, and has given a couple talks in South Africa and the USA. Catch him on Github @sighmin, or at
+              %a{:href=>"http://simonvandyk.co.za", :target=>"_blank", :title=>"simonvandyk"} simonvandyk.co.za
+            %p Arrie:
+            %p Arrie is a developer at Platform45 passionate about the intersection of design and innovative technologies ranging from chatbots and voice interfaces to machine learning and DAPPs.
+            %p
+              Catch him on Github (@klipie245), or at
+              %a{:href=>"http://500px.com/klipie245", :target=>"_blank", :title=>"arrie"} 500px.com/klipie245
+            %h3 Fantastic chatbots and where to find them
+            %p We dream romantically about being able to converse with their machines. These voice and text based interfaces are making their way into our products and it turns out, are actually simple to build.
+            %p We will give you a ridiculously short, principled understanding of natural language processing, while building a chatbot that can handle registering a user for your site and responding to small talk.
+            %p As a bonus let’s control our root.co.za account with our voice, for reals. Let’s explore this together as we share our foray into text based interfaces & how we can apply them right now.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker11', rel: 'speaker_image', class: 'fancybox', id: 'caio'}
+            = image_tag "speakers/2018/caio_almeida.png"
+          %a{:href=>"https://twitter.com/caiosba", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/caiosba", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker11', rel: 'speakers', class: 'fancybox'} Caio Almeida
+        %p Using GraphQL and Relay for hybrid Ruby on Rails applications
+
+        #speaker11.detail
+          .links.right
+            %a{:href=>"https://twitter.com/caiosba", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/caiosba", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/caio_almeida.png"
+            %h2 Caio Almeida
+          .inner
+            %p Caio holds bachelor and master degrees on computer science from Federal University of Bahia, Brazil.
+            %p He's software developer for more than 10 years and works professionally with Ruby On Rails since 2008.
+            %p Since 2011, he's a senior software engineer at Meedan, a software company based in San Francisco, California, USA.
+            %p He created and maintains some NPM modules, Ruby gems and other open source softwares and talks about those things at conferences like RubyConf Brazil, RubyConf Portugal, and others.
+            %h3 Using GraphQL and Relay for hybrid Ruby on Rails applications
+            %p In this talk, the author will show how to add a GraphQL layer to an existing Ruby On Rails application, that is able to expose part of the data model through this interface.
+            %p Wow to build a client side application based on React.js, React Native and Relay that consumes this information and that works in different platforms (iOS, Android, Google Chrome, web) but that shares the same source code among them.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker12', rel: 'speaker_image', class: 'fancybox', id: 'megan'}
+            = image_tag "speakers/2018/megan_oneill.png"
+          %a{:href=>"https://github.com/Oneill38", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker12', rel: 'speakers', class: 'fancybox'} Megan O'Neill
+        %p Make it SPECtacular
+
+        #speaker12.detail
+          .links.right
+            %a{:href=>"https://github.com/Oneill38", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/megan_oneill.png"
+            %h2 Megan O'Neill
+          .inner
+            %p Born on the East Coast of the USA, I now spend my time writing code from the beaches of California.
+            %p I work for the leading Construction Technology company in the world and we love Ruby! Lets talk code and craft beers
+            %h3 Make it SPECtacular
+            %p "Testing takes too long", "It's a nightmare to setup a spec", "There aren't any other tests".
+            %p How many times have we all heard these phrases and more as reasons why testing is awful.
+            %p Let's look at four easy ways to fix this today, and make writing tests, spectacular!
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker13', rel: 'speaker_image', class: 'fancybox', id: 'Sihui'}
+            = image_tag "speakers/2018/sihui_huang.png"
+          %a{:href=>"https://twitter.com/Ridhwana_K", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/Sihui", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker13', rel: 'speakers', class: 'fancybox'} Sihui Huang
+        %p Ouch! That Code Hurts My Brain
+
+        #speaker13.detail
+          .links.right
+            %a{:href=>"https://twitter.com/Sihui_K", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/Sihui", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/sihui_huang.png"
+            %h2 Sihui Huang
+          .inner
+            %p
+              Sihui spends most of her time writing, reading, and blogging about software.
+              She enjoys learning and talking about
+              %a{:href=>"http://www.sihui.io/design-patterns/", :target=>"_blank", :title=>"arrie"} software design
+              %a{:href=>"http://www.sihui.io/code-smell-cheat-sheet/", :target=>"_blank", :title=>"arrie"} refactoring,
+              and
+              %a{:href=>"http://www.sihui.io/procs-in-ruby-p1/", :target=>"_blank", :title=>"arrie"} Ruby,
+              She works at
+              %a{:href=>"https://gusto.com/", :target=>"_blank", :title=>"arrie"} Gusto
+              and blogs at
+              %a{:href=>"https://www.sihui.io/", :target=>"_blank", :title=>"arrie"} sihui.io
+            %p Her favorite answers to all questions are: “It depends”, “I don’t know”, and “Does it matter?”
+            %h3 Ouch! That Code Hurts My Brain
+            %p After a day of work, you are exhausted and have a big headache. You get home and feel so tired that you don’t want to say a single word. You close your eyes and feel the pain inside of your head.
+            %p The code you read at work exhausts you and hurts your brain, But it doesn’t have to. Come to this talk and I will show you simple techniques for spotting brain-hurting code and making it understandable to five-year-olds. 
+            %p We will look at some Ruby code together and make it a delight to the eyes.
+            %p When dealing with brain-friendly code, you will become more productive at work and happier in life.
 
     %div.clearfix
     = partial('partials/global/signup')
