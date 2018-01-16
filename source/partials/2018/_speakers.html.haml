@@ -155,16 +155,16 @@
         .rounded
           %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox', id: 'jacques'}
             = image_tag "speakers/2018/jacques_visser.png"
-          %a{:href=>"https://twitter.com/", :class=>"twitter"}= image_tag "twitter.png"
-          %a{:href=>"https://github.com/", :class=>"github"}= image_tag "github.png"
+          %a{:href=>"https://twitter.com/jcqvisser", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/jcqvisser", :class=>"github"}= image_tag "github.png"
         %h2
           %a{href: '#speaker6', rel: 'speakers', class: 'fancybox'} Jacques Visser
         %p Building Ruby in Ruby
 
         #speaker6.detail
           .links.right
-            %a{:href=>"https://twitter.com/", :class=>"twitter"}= image_tag "twitter.png"
-            %a{:href=>"https://github.com/", :class=>"github"}= image_tag "github.png"
+            %a{:href=>"https://twitter.com/jcqvisser", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/jcqvisser", :class=>"github"}= image_tag "github.png"
           .name
             = image_tag "speakers/2018/jacques_visser.png"
             %h2 Jacques Visser
@@ -224,9 +224,9 @@
             %p He now focuses on infrastructure and deployment automation, and helping teams adopt modern DevOps practices at Prodigy Finance.
             %p As an advocate of DevOps principles, he’s building a community around DevOps in Cape Town, having founded and helped organise both the Cape Town DevOps meetup group in 2015, and DevOpsDays Cape Town in 2016.
             %h3 Dockerizing Ruby apps and moving off Engine Yard
-            %p Growth has always been a vital part in ensuring that I lead a meaningful career.
-            %p Recently, I’ve been given the opportunity to be a part of a Techwomen program in Silicon Valley, and it has expanded my mind to lessons that have helped me to progress in my career.
-            %p I’d love to share my learnings around the value of mentorship, diversity in leadership, the art of storytelling and the gratification of social impact.
+            %p As part of the ongoing effort of splitting up the monolith, Prodigy Finance decided in mid 2017 to start migrating off Engine Yard due to the escalating costs of running microservices on single hosts. 
+            %p As part of this migration, we wanted to future proof ourselves by moving everything into Docker to prepare for using an orchestration framework (Kubernetes / Nomad).
+            %p In this talk, I will cover the technical issues faced during this process: changing apps to use environment variables for all configs, musl vs glibc, libressl vs openssl and securely building Gems inside a container.
 
       %li.speaker
         .rounded
@@ -389,5 +389,30 @@
             %p Prior music career in rock-n-roll, toured the world - insanely lucky to work with artists from Bob Dylan to Ray Charles to The Specials to Joe Strummer.
             %h3 Fun with an Amazon Echo, Ruby and Recipes
             %p Voice interfaces open up so many interesting possibilities and in this talk I'll show you how to very quickly build and deploy a useful "skill" with Ruby, and at the same time, make sure you hopefully don't burn the dinner.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker16', rel: 'speaker_image', class: 'fancybox', id: 'miles'}
+            = image_tag "speakers/2018/helio_cola.png"
+          %a{:href=>"https://twitter.com/hacrods", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/heliocola", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker16', rel: 'speakers', class: 'fancybox'} Helio Cola
+        %p DIY projects with Ruby & Pi
+
+        #speaker16.detail
+          .links.right
+            %a{:href=>"https://twitter.com/hacrods", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/heliocola", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/helio_cola.png"
+            %h2 Helio Cola
+          .inner
+            %p Helio is a passionate software engineer, who has built a lot of software and has created things in more than a dozen languages, over the past 16 years. 
+            %p In 2015 Helio turned a side project into a company focused on helping small NPOs to increase awareness and community engagement. 
+            %p In the recent years has been tinkering with RaspberryPi, Parallella, and #IOT (side-)projects.
+            %h3 DIY projects with Ruby & Pi
+            %p Ruby and RaspberryPi are available to us for quite sometime and this talk is meant to discuss how to use Ruby to explore things on a RaspberryPi. 
+            %p From a practical point of view, we will go through installation, setup, and build a simple Motion Sensor application and a Time-Lapse Camera using RaspberryPi.
     %div.clearfix
     = partial('partials/global/signup')
