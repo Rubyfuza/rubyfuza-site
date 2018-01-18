@@ -224,7 +224,7 @@
             %p He now focuses on infrastructure and deployment automation, and helping teams adopt modern DevOps practices at Prodigy Finance.
             %p As an advocate of DevOps principles, he’s building a community around DevOps in Cape Town, having founded and helped organise both the Cape Town DevOps meetup group in 2015, and DevOpsDays Cape Town in 2016.
             %h3 Dockerizing Ruby apps and moving off Engine Yard
-            %p As part of the ongoing effort of splitting up the monolith, Prodigy Finance decided in mid 2017 to start migrating off Engine Yard due to the escalating costs of running microservices on single hosts. 
+            %p As part of the ongoing effort of splitting up the monolith, Prodigy Finance decided in mid 2017 to start migrating off Engine Yard due to the escalating costs of running microservices on single hosts.
             %p As part of this migration, we wanted to future proof ourselves by moving everything into Docker to prepare for using an orchestration framework (Kubernetes / Nomad).
             %p In this talk, I will cover the technical issues faced during this process: changing apps to use environment variables for all configs, musl vs glibc, libressl vs openssl and securely building Gems inside a container.
 
@@ -362,7 +362,7 @@
             %p Her favorite answers to all questions are: “It depends”, “I don’t know”, and “Does it matter?”
             %h3 Ouch! That Code Hurts My Brain
             %p After a day of work, you are exhausted and have a big headache. You get home and feel so tired that you don’t want to say a single word. You close your eyes and feel the pain inside of your head.
-            %p The code you read at work exhausts you and hurts your brain, But it doesn’t have to. Come to this talk and I will show you simple techniques for spotting brain-hurting code and making it understandable to five-year-olds. 
+            %p The code you read at work exhausts you and hurts your brain, But it doesn’t have to. Come to this talk and I will show you simple techniques for spotting brain-hurting code and making it understandable to five-year-olds.
             %p We will look at some Ruby code together and make it a delight to the eyes.
             %p When dealing with brain-friendly code, you will become more productive at work and happier in life.
 
@@ -384,8 +384,8 @@
             = image_tag "speakers/2018/miles_woodroffe.png"
             %h2 Miles Woodroffe
           .inner
-            %p Rails hacker. 10 years in startups in SF as coder and/or CTO, now CTO at Cookpad Ltd in Bristol UK. 
-            %p Experience bootstrapping, lean startup, coding, scaling to tens of millions, hiring, being acquired... 
+            %p Rails hacker. 10 years in startups in SF as coder and/or CTO, now CTO at Cookpad Ltd in Bristol UK.
+            %p Experience bootstrapping, lean startup, coding, scaling to tens of millions, hiring, being acquired...
             %p Prior music career in rock-n-roll, toured the world - insanely lucky to work with artists from Bob Dylan to Ray Charles to The Specials to Joe Strummer.
             %h3 Fun with an Amazon Echo, Ruby and Recipes
             %p Voice interfaces open up so many interesting possibilities and in this talk I'll show you how to very quickly build and deploy a useful "skill" with Ruby, and at the same time, make sure you hopefully don't burn the dinner.
@@ -408,11 +408,111 @@
             = image_tag "speakers/2018/helio_cola.png"
             %h2 Helio Cola
           .inner
-            %p Helio is a passionate software engineer, who has built a lot of software and has created things in more than a dozen languages, over the past 16 years. 
-            %p In 2015 Helio turned a side project into a company focused on helping small NPOs to increase awareness and community engagement. 
+            %p Helio is a passionate software engineer, who has built a lot of software and has created things in more than a dozen languages, over the past 16 years.
+            %p In 2015 Helio turned a side project into a company focused on helping small NPOs to increase awareness and community engagement.
             %p In the recent years has been tinkering with RaspberryPi, Parallella, and #IOT (side-)projects.
             %h3 DIY projects with Ruby & Pi
-            %p Ruby and RaspberryPi are available to us for quite sometime and this talk is meant to discuss how to use Ruby to explore things on a RaspberryPi. 
+            %p Ruby and RaspberryPi are available to us for quite sometime and this talk is meant to discuss how to use Ruby to explore things on a RaspberryPi.
             %p From a practical point of view, we will go through installation, setup, and build a simple Motion Sensor application and a Time-Lapse Camera using RaspberryPi.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker17', rel: 'speaker_image', class: 'fancybox', id: 'konstantin'}
+            = image_tag "speakers/2018/konstantin_tennhard.png"
+          %a{:href=>"https://twitter.com/t6d", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/t6d", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker17', rel: 'speakers', class: 'fancybox'} Konstantin Tennhard
+        %p Simulating and Testing Third Party Service Integrations
+
+        #speaker17.detail
+          .links.right
+            %a{:href=>"https://twitter.com/t6d", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/t6d", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/konstantin_tennhard.png"
+            %h2 Konstantin Tennhard
+          .inner
+            %p Hi, I'm Konstantin, a computer scientist who specializes in developing large scale internet applications.
+            %p A while ago, I moved from Germany to Canada to work at Shopify and couldn't be happier. Software design is what I live and breathe.
+            %p I use it as a tool to empower other developers to move faster and with more confidence. My scientific interest on the other hand are natural language processing and statistical learning methods.
+            %h3 Simulating and Testing Third Party Service Integrations
+            %p Nowadays, we often rely on third party services that we integrate into our product, instead of building every aspect of an application.
+            %p Testing these integrations is hard. So far, the standard approach has been replaying requests with VCR or stubbing them with Webmock.
+            %p This talk is about simulating third party dependencies in your test suite and even in your development environment with Sinatra or any other Rack-based web framework.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker18', rel: 'speaker_image', class: 'fancybox', id: 'richard'}
+            = image_tag "speakers/2018/richard_ellingson.png"
+          %a{:href=>"https://github.com/ellingsonr", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker18', rel: 'speakers', class: 'fancybox'} Richard Ellingson
+        %p Fast Code Without Breaking Things
+
+        #speaker18.detail
+          .links.right
+            %a{:href=>"https://github.com/ellingsonr", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/richard_ellingson.png"
+            %h2 Richard Ellingson
+          .inner
+            %p I am a South African software engineer, based in Cape Town.
+            %p I have been working at ZappiStore for the last three years, writing, tweaking and optimising the data science tools that we use for our automated market research store.
+            %p When I'm not behind a keyboard, he's fixing up and riding old motorcycles.
+            %h3 Fast Code Without Breaking Things
+            %p The road to performance problems is paved with good intentions. Performance problems are probably the only time you may need to understand how all abstractions we rely on work; from Ruby to CPU.
+            %p Myself and my coworkers spent 4 months making our internal Ruby data-science platform 100 times faster. This is our story...
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker19', rel: 'speaker_image', class: 'fancybox', id: 'john'}
+            = image_tag "speakers/2018/john_crepezzi.png"
+          %a{:href=>"https://twitter.com/seejohnrun", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/seejohnrun", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker19', rel: 'speakers', class: 'fancybox'} John Crepezzi
+        %p On Memory
+
+        #speaker19.detail
+          .links.right
+            %a{:href=>"https://twitter.com/seejohnrun", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/seejohnrun", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/john_crepezzi.png"
+            %h2 John Crepezzi
+          .inner
+            %p John is a developer at GitHub in New York. He is the author of several popular Ruby gems including `ice_cube`, `easy_translate` and `gotcha`.
+            %p
+              He is also the creator of the open source pastebin software `hastebin`. He enjoys speaking and blogging about code, learning new things, and writing great software.
+              %a{:href=>"http://johncrepezzi.com", :target=>"_blank", :title=>"johncrpezzi"} johncrepezzi.com
+            %h3 On Memory
+            %p Ruby doesn't require developers to manage memory. It definitely makes our work less frustrating, but losing sight of the memory implications of our code, will get us into trouble quickly!
+            %p In this talk, I'll go over the current state of memory management in Ruby, some common (and less common) memory pitfalls, and how to avoid them.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker20', rel: 'speaker_image', class: 'fancybox', id: 'gys'}
+            = image_tag "speakers/2018/gys_muller.png"
+          %a{:href=>"https://twitter.com/gysmuller", :class=>"twitter"}= image_tag "twitter.png"
+          %a{:href=>"https://github.com/gysmuller", :class=>"github"}= image_tag "github.png"
+        %h2
+          %a{href: '#speaker20', rel: 'speakers', class: 'fancybox'} Gys Muller
+        %p Mongo: An unexpected journey
+
+        #speaker20.detail
+          .links.right
+            %a{:href=>"https://twitter.com/gysmuller", :class=>"twitter"}= image_tag "twitter.png"
+            %a{:href=>"https://github.com/gysmuller", :class=>"github"}= image_tag "github.png"
+          .name
+            = image_tag "speakers/2018/gys_muller.png"
+            %h2 Gys Muller
+          .inner
+            %p I started my career as a mechatronics engineer responsible for designing high-speed dynamic weighing applications in the transport and food industries.
+            %p I’ve been working in software development for the past 7 years and have worked on a range of products, including computer vision, fintech, health and fitness.
+            %p I’m currently responsible for running the product team at OfferZen.
+            %h3 Mongo: An unexpected journey
+            %p An account of our epic journey over the past two years and the challenges we encountered as a result of choosing Mongo as our database.
+            %p The reasons for this choice will be discussed, as well as the mistakes made, and the techniques utilized to address the challenges while scaling our product.
     %div.clearfix
     = partial('partials/global/signup')
