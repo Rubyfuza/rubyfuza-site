@@ -15,7 +15,7 @@ git clone git@gitlab.com:rubyfuza/rubyfuza.gitlab.io.git
 
 cd into the repo
 
-bundle 
+bundle
 ```
 
 ## Middleman Server and Build
@@ -41,7 +41,7 @@ middleman build
 
 Middleman has been configured to complie the site into the `public_html` folder, this folder will then be served through a Heroku / Rackapp / Puma setup.
 
-## Directory Structure 
+## Directory Structure
 
 ```
 mymiddlemansite/
