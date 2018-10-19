@@ -1,0 +1,45 @@
+---
+title: Rubyfuza - Next
+---
+
+<div class="site" id="page">
+    <%# partial('partials/desktop_nav')%>
+  <div class="site-content" id="content">
+    <div class="content-area" id="primary">
+      <main class="site-main" id="main">
+        <%= partial('partials/header')%>
+        <%= partial('partials/header_call_to_action')%>
+        <%= partial('partials/rubyfuza_speaker_block')%>
+        <%# partial('partials/schedule')%>
+        <%= partial('partials/sponsors')%>
+        <%= partial('partials/venue')%>
+        <%= partial('partials/footer_call_to_action')%>
+      </main>
+    </div>
+  </div>
+  <footer class="site-footer" id="colophon" role="contentinfo">
+    <%= partial('partials/footer')%>
+    <div class="site-info">
+      <div class="container">
+        <div class="row in-view">
+          <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+            <a class="sub-head" href="">
+              With
+              <i class="fa fa-heart color--secondary"></i> by Ruberto</a>
+          </div>
+          <div class="col-12 col-md-6 col-xl-5 text-md-right">
+            <a class="sub-head dashed dashed--reverse in-view__child in-view__child--in" href="#">© 2010 - 2018 Rubyfuza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="go-up" id="up">
+    <a class="go-up__btn" href="#page">
+      <span class="btn btn--primary btn--circle">
+        <i class="fa fa-chevron-up"></i>
+      </span>
+    </a>
+  </div>
+  <%= partial('partials/mobile_nav')%>
+</div>

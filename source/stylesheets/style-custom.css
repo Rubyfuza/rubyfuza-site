@@ -1,0 +1,16 @@
+/* Custom styles
+   ========================================================================== */
+
+h1.event-name {
+  font-family: 'Amatic SC', cursive;
+  font-size: 400%;
+}
+
+.company figure .lazyload--el .offerzen {
+  height: 30px;
+  width: 149px; 
+}
+
+.fu {
+  color: #CE394D
+}

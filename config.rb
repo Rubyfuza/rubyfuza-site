@@ -1,50 +1,46 @@
-###
-# Page options, layouts, aliases and proxies
-###
+# Activate and configure extensions
+# https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-# Per-page layout changes:
-#
-# With no layout
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
+
+# Layouts
+# https://middlemanapp.com/basics/layouts/
+
+# Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+# page '/path/to/file.html', layout: 'other_layout'
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
+# Proxy pages
+# https://middlemanapp.com/advanced/dynamic-pages/
 
-# General configuration
+# proxy(
+#   '/this-page-has-no-template.html',
+#   '/template-file.html',
+#   locals: {
+#     which_fake_page: 'Rendering a fake page with a local variable'
+#   },
+# )
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
-
-###
 # Helpers
+# Methods defined in the helpers block are available in templates
+# https://middlemanapp.com/basics/helper-methods/
 
-set :relative_links, true
+# helpers do
+#   def some_helper
+#     'Helping'
+#   end
+# end
 
-set :partials_dir, 'partials'
+# Build-specific configuration
+# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
-
-set :build_dir, 'public'
-
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-
-  activate :relative_assets
-  activate :minify_html
-  activate :directory_indexes
-  activate :gzip
-
-end
+# configure :build do
+#   activate :minify_css
+#   activate :minify_javascript
+# end
